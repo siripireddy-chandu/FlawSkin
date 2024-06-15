@@ -254,7 +254,8 @@ span {
   background-color: #f9f9f9;
   min-width: 105px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;border-radius: 10px;
+  z-index: 1;
+  border-radius: 10px;
 }
 
 /* Style the buttons inside the dropdown */
@@ -273,7 +274,8 @@ span {
 }
 
 .dropdown-content button:hover {
-  background: blueviolet;color: white;
+  background: blueviolet;
+  color: white;
 }
 
 /* Change color of dropdown button on hover */
@@ -288,10 +290,13 @@ hr {
 .hold-btns {
   display: flex;
   gap: 1em;
-}.close-bar{
-  position: absolute;
-right: 50px;
 }
-.fa-bars{
+
+.close-bar {
+  position: absolute;
+  right: 50px;
+}
+
+.fa-bars {
   color: black;
 }
