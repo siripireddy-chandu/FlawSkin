@@ -132,7 +132,14 @@ header {
     object-fit: fill;
 }
 
-
+@media(max-width:768px){
+    .image-container img {
+        width: 100%;
+        /* Images should fill the container width */
+        object-fit: fill;
+        min-height: 300px;
+    }
+}
 /* Center the "Our Services" section */
 
 .services {
