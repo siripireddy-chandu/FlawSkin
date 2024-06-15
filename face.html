@@ -6,13 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Face Laser Hair Removal</title>
     <link rel="stylesheet" href="face.css">
+    <link rel="stylesheet" href="underarms.css">
     <link rel="stylesheet" href="services-img.css">
 
     <link rel="icon" type="image/x-icon" href="flawskinlogo.png">
     <link rel="stylesheet" href="navbar.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -28,16 +34,20 @@
             <!-- <div class="search-bar">
                 <form action="#">
                     <input type="text" id="search-input" placeholder="Search Services">
-                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"
-                    />
-                    <button type="submit" id="search-btn"><i class="fas fa-search"></i></button>
+                    <link rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+                        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+                        crossorigin="anonymous" referrerpolicy="no-referrer" />
+                    <button type="submit" id="search-btn"> <i class="fas fa-search"></i></button>
                 </form>
             </div> -->
 
-            <div class="login">
+            <div class="login"> 
+                <a href="Home.html" class="nav-link">Home</a>
                 <a href="contact.html" class="nav-link">Contact</a>
                 <a href="aboutus.html" class="nav-link">About Us</a>
-                <a href="login.html">Login</a>
+
+                <!-- <a href="login.html">Login</a> -->
             </div>
 
             <div class="close-bar">
@@ -48,7 +58,6 @@
     <main>
         <h1>Face Laser Hair Reduction</h1>
         <p>Get smooth, hair-free skin on your face with our safe and effective laser hair removal treatments.</p>
-
         <div class="service-areas">
             <h2>Areas</h2>
 
@@ -60,8 +69,17 @@
                         <p>Cost: ₹899</p>
                         <p>Rating: ⭐⭐⭐⭐</p>
                         <p>Offer: 50% off (₹500)</p>
-                        <a href="#" class="book-now-btn">Book Now</a>
-                    </div>
+                        <a href="PrePostServices.html" class="pre-post">Pre & Post Services</a>
+                        <hr style="color: transparent;background:transparent;">
+                        <!-- <a href="#" class="book-now-btn">Book Now</a> -->
+                        <div class="dropdown">
+                            <button onclick="toggleDropdown()" class="dropbtn">Book Now <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <button onclick="COD()">COD</button>
+                                <button onclick="UPI()">UPI</button>
+                            </div>
+                        </div>                    </div>
                     <div class="content-img">
                         <img src="UPPPER LIP.png" alt="">
                     </div>
