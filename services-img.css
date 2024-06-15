@@ -1,0 +1,13 @@
+.store {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.content-img img {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}

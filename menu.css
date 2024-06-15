@@ -1,0 +1,461 @@
+/* General styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #87cefa;
+    /* Light sky blue color code */
+    overflow-x: hidden;
+}
+
+
+/* Header styles */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #f0f0f0;
+    opacity: 0;
+    animation: fadeInHeader 1s forwards;
+}
+
+@keyframes fadeInHeader {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #f0f0f0;
+}
+
+.logo {
+    flex: 0 0 auto;
+}
+
+.logo img {
+    height: 100px;
+}
+
+.company-name {
+    font-size: 1.2rem;
+    margin-top: -30px;
+    text-align: end;
+}
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search-bar form {
+    display: flex;
+    width: 100%;
+}
+
+.search-bar input[type="text"] {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.search-bar button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+}
+
+.login a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login a:hover {
+    background-color: #ddd;
+}
+
+
+/* Image scroll section styles */
+
+.image-scroll {
+    overflow: hidden;
+    /* Important for auto scroll */
+    position: relative;
+    /* Needed for child element positioning */
+    height: 200px;
+    z-index: -10;
+    /* Adjust image container height as needed */
+}
+
+.image-container {
+    display: flex;
+    animation: image-scroll 20s infinite linear;
+    z-index: 0;
+    /* Animation for scrolling */
+}
+
+@keyframes image-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+    /* Adjust scroll distance based on image width */
+}
+
+.image-container img {
+    width: 30%;
+    /* Images should fill the container width */
+    object-fit: fill
+}
+
+
+/* Center the "Our Services" section */
+
+.services {
+    text-align: center;
+    /* Center content horizontally */
+    margin: 2rem auto;
+    /* Add margin for spacing */
+}
+
+
+/* Style the service buttons (refer to previous explanation) */
+
+.service-buttons {
+    display: flex;
+    justify-content: center;
+    /* Center buttons horizontally */
+    margin: 1rem auto;
+    /* Add space between buttons and section */
+}
+
+
+/* Style the service buttons (refer to previous explanation) */
+
+.service-buttons button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.service-buttons button:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
+    /* Increase button size on hover */
+}
+
+.service-buttons button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.service-buttons button:hover {
+    background-color: #ddd;
+}
+
+
+/* Optionally, style a specific button (e.g., for the active service) */
+
+#active-service-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+/* styles.css */
+
+
+/* ... your existing styles ... */
+
+.home-service-banner span {
+    color: #007bff;
+    /* Blue color for emphasis */
+    font-weight: bold;
+}
+
+
+/* ... your existing styles ... */
+
+.home-service-banner {
+    /* ... existing styles ... */
+    animation: bounce 2s infinite ease-in-out;
+    /* Add animation properties */
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+home-service-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem 2rem;
+    background-color: #f0f0f0;
+    /* Light gray background */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow */
+    text-align: center;
+    font-size: 1.2rem;
+    /* Adjust font size */
+    /* Ensure banner appears on top of content */
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    /* Adjust position from bottom */
+    right: 20px;
+    /* Adjust position from right */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007bff;
+    /* Customize background color */
+    color: #fff;
+    /* Text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow */
+    z-index: 100;
+    /* Ensure button appears on top of content */
+    transition: all 0.3s ease-in-out;
+    /* Add smooth hover effect (optional) */
+}
+
+.floating-button:hover {
+    background-color: #0067cc;
+    /* Adjust hover background color (optional) */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    margin: 10px 0;
+    width: 97%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: white;
+    border: 1px dashed deepskyblue;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f5f5f5;
+}
+
+footer a {
+    color: #007bff;
+    /* Link color */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+footer a:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+}
+
+.navbar {
+    display: flex;
+}
+
+#search-input {
+    width: 800px;
+}
+
+#openIcon {
+    display: none;
+}
+
+#closeIcon {
+    display: none;
+}
+
+
+/* Default styles */
+
+.navbar.active {
+    display: block;
+}
+
+.menu-bar {
+    display: none;
+}
+
+.close-bar {
+    display: none;
+}
+
+
+/* Mobile styles */
+
+@media (max-width: 600px) {
+    #openIcon {
+        display: flex;
+    }
+
+    .menu-bar {
+        display: flex;
+        /* Show menu bar icon in mobile view */
+    }
+
+    .navbar {
+        position: fixed;
+        /* Changed to fixed for better mobile experience */
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #f9f9f9;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 2000;
+        display: none;
+        /* Hide by default on smaller screens */
+    }
+
+    .navbar.active {
+        display: block;
+        /* Display when active */
+    }
+
+    .search-bar {
+        margin-bottom: 10px;
+    }
+
+    .login {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login a {
+        margin-bottom: 5px;
+    }
+
+    .logo img {
+        height: 80px;
+        /* Adjusted height for smaller screens */
+        width: auto;
+        /* Let the width adjust proportionally */
+    }
+
+    .services {
+        position: relative;
+        top: -80px;
+        /* Adjusted top position */
+    }
+
+    .service-buttons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* Five columns of equal width */
+        gap: 1em;
+        /* Gap between grid items */
+        margin-left: 1em;
+    }
+
+    .service-buttons button {
+        padding: 10px 5px;
+    }
+
+    #closeIcon {
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        padding: 10px;
+        background: #000;
+        color: wheat;
+        /* Ensure it's above the navbar */
+    }
+
+    .close-bar {
+        display: block;
+    }
+}

@@ -1,0 +1,161 @@
+/* Header styles */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #f0f0f0;
+    opacity: 0;
+    animation: fadeInHeader 1s forwards;
+}
+
+@keyframes fadeInHeader {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #f0f0f0;
+}
+
+.logo {
+    flex: 0 0 auto;
+}
+
+.logo img {
+    height: 100px;
+}
+
+.company-name {
+    font-size: 1.2rem;
+    margin-top: -30px;
+    text-align: end;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+}
+
+.login a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login a:hover {
+    background-color: #ddd;
+}
+
+
+/* styles.css */
+
+
+/* ... your existing styles ... */
+
+.navbar {
+    display: flex;
+}
+
+#openIcon {
+    display: none;
+}
+
+#closeIcon {
+    display: none;
+}
+
+
+/* Default styles */
+
+.navbar.active {
+    display: block;
+}
+
+.menu-bar {
+    display: none;
+}
+
+.close-bar {
+    display: none;
+}
+
+
+/* Mobile styles */
+
+@media (max-width: 600px) {
+    #openIcon {
+        display: flex;
+    }
+    .menu-bar {
+        display: flex;
+        /* Show menu bar icon in mobile view */
+    }
+    .navbar {
+        position: fixed;
+        /* Changed to fixed for better mobile experience */
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #f9f9f9;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 2000;
+        display: none;
+        /* Hide by default on smaller screens */
+    }
+    .navbar.active {
+        display: block;
+        /* Display when active */
+    }
+    .search-bar {
+        margin-bottom: 10px;
+    }
+    .login {
+        display: flex;
+        flex-direction: column;
+    }
+    .login a {
+        margin-bottom: 5px;
+    }
+    .logo img {
+        height: 80px;
+        /* Adjusted height for smaller screens */
+        width: auto;
+        /* Let the width adjust proportionally */
+    }
+    .services {
+        position: relative;
+        top: -80px;
+        /* Adjusted top position */
+    }
+    .service-buttons {
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+    #closeIcon {
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        padding: 10px;
+        background: #000;
+        color: wheat;
+        /* Ensure it's above the navbar */
+    }
+    .close-bar {
+        display: block;
+    }
+}
