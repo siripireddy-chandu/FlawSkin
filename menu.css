@@ -128,6 +128,7 @@ header {
 
 .image-container img {
     width: 30%;
+    /* Images should fill the container width */
     object-fit: fill;
 }
 
@@ -139,13 +140,15 @@ header {
     margin: 2rem auto;
     /* Add margin for spacing */
 }
-@media(max-width:768px){
-    
-.services {
-    position: relative;
-    top: -15px;
+
+@media(max-width:768px) {
+
+    .services {
+        position: relative;
+        top: -15px;
+    }
 }
-}
+
 
 /* Style the service buttons (refer to previous explanation) */
 
@@ -430,7 +433,7 @@ footer a:hover {
 
     .services {
         position: relative;
-        top: -80px;
+        top: -15px;
         /* Adjusted top position */
     }
 
