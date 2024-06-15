@@ -128,7 +128,7 @@ header {
         flex-direction: row;
     }
     .login a {
-        margin-bottom: 5px;
+        margin-bottom: 5px;padding: 5px 8px;
     }
     .logo img {
         height: 80px;
