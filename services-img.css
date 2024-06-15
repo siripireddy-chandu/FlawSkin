@@ -18,17 +18,8 @@
     }
 
     .content-img img {
-        height: 300px;
-        min-width: 300px;
-        border-radius: 0%;
-    }
-}
-@media(max-width:208px) {
-
-
-    .content-img img {
-        height: 300px;
-        min-width: 800px;
-        border-radius: 0%;
+        height: 100px;
+        min-width: 100px;
+        border-radius: 50%;
     }
 }
