@@ -138,7 +138,7 @@ header {
         margin-bottom: 0px;
         padding: 0px auto;
         /* font-size: 15px;
-        margin: 2px; */margin: 1em;
+        margin: 2px; */margin: 1em;font-size: 15px;
     }
 
     .login a:hover {
