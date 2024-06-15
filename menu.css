@@ -128,7 +128,6 @@ header {
 
 .image-container img {
     width: 30%;
-    /* Images should fill the container width */
     object-fit: fill;
 }
 
