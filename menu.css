@@ -103,7 +103,7 @@ header {
     /* Important for auto scroll */
     position: relative;
     /* Needed for child element positioning */
-    height: 200px;
+    height: 500px;
     z-index: -10;
     /* Adjust image container height as needed */
 }
