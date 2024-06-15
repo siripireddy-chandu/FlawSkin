@@ -61,7 +61,7 @@ header {
 
 .search-bar form {
     display: flex;
-    width: 50%;
+    width: 100%;
 }
 
 .search-bar input[type="text"] {
