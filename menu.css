@@ -8,7 +8,9 @@ body {
     overflow-x: hidden;
 }
 
-
+::-webkit-scrollbar{
+    width: 0;
+}
 /* Header styles */
 
 header {
