@@ -103,7 +103,6 @@ header {
     /* Important for auto scroll */
     position: relative;
     /* Needed for child element positioning */
-    height: 500px;
     z-index: -10;
     /* Adjust image container height as needed */
 }
@@ -121,7 +120,7 @@ header {
     }
 
     to {
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
 
     /* Adjust scroll distance based on image width */
