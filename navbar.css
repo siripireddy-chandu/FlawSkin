@@ -137,8 +137,11 @@ header {
     .login a {
         margin-bottom: 0px;
         padding: 0px auto;
-        font-size: 15px;margin: 2px;
-    }.login a:hover{
+        /* font-size: 15px;
+        margin: 2px; */margin: 1em;
+    }
+
+    .login a:hover {
         border: orangered;
     }
 
