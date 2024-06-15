@@ -13,9 +13,9 @@
 }
 
 @media(max-width:768px) {
-    .store {
+    /* .store {
         flex-direction: column;
-    }
+    } */
 
     .content-img img {
         height: 100px;
