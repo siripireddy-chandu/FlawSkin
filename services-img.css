@@ -11,3 +11,15 @@
     width: 180px;
     border-radius: 50%;
 }
+
+@media(max-width:768px) {
+    .store {
+        flex-direction: column;
+    }
+
+    .content-img img {
+        height: 300px;
+        min-width: 300px;
+        border-radius: 0%;
+    }
+}

@@ -288,4 +288,7 @@ hr {
 .hold-btns {
   display: flex;
   gap: 1em;
+}.close-bar{
+  position: absolute;
+right: 30px;
 }

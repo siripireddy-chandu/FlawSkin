@@ -125,7 +125,7 @@ header {
     }
     .login {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
     .login a {
         margin-bottom: 5px;
