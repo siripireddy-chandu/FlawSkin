@@ -22,7 +22,6 @@
             <a href="menu.html">Home</a>
             <a href="contact.html" class="nav-link">Contact</a>
             <a href="aboutus.html" class="nav-link">About Us</a>
-            <a href="PrePostServices.html" class="nav-link">Pre & Post Services</a>
         </div>
     </header>
 
@@ -41,8 +40,16 @@
                         <p>Cost: ₹2,950</p>
                         <p>Rating: ⭐⭐⭐⭐</p>
                         <p>Offer: 50% off (₹500)</p>
-                        <a href="#" class="book-now-btn">Book Now</a>
-                    </div>
+                        <a href="PrePostServices.html" class="pre-post">Pre & Post Services</a>
+                        <hr style="color: transparent;background:transparent;">
+                        <!-- <a href="#" class="book-now-btn">Book Now</a> -->
+                        <div class="dropdown">
+                            <button onclick="toggleDropdown()" class="dropbtn">Book Now <i class="fa fa-caret-down"></i> </button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <button onclick="COD()">COD</button>
+                                <button onclick="UPI()">UPI</button>
+                            </div>
+                        </div>                    </div>
                     <div class="content-img">
                         <img src="FULLBACK.png" alt="">
                     </div>
@@ -59,6 +66,8 @@
     </main>
 
     <footer></footer>
+
+    <script src="BuyButtonDropdown.js"></script>
 </body>
 
 </html>
