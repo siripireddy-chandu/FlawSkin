@@ -21,16 +21,23 @@
         <div class="hello">
             <form method="post" action="" name="contact-form">
                 <span class="close">&times;</span>
-                <h4>Contact Us</h4>
-                <input type="text" name="name" placeholder="Name">
-                <input type="text" name="number" placeholder="Number">
-                <input type="email" name="email" placeholder="Email">
+                <h4>Cash On Devlivery</h4>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="text" name="number" placeholder="Number" required>
+                <input type="email" name="email" placeholder="Email" required>
                 <select name="services" id="" required>
                     <option value="Face">Face</option>
                     <option value="Neck">Neck</option>
+                    <option value="Underarms">Underarms</option>
+                    <option value="Hands">Hands</option>
+                    <option value="Legs">Legs</option>
+                    <option value="Back">Back</option>
+                    <option value="Bikini">Bikini</option>
+                    <option value="Chest & Abdomen">Chest & Abdomen</option>
+                    <option value="Buttocks">Buttocks</option>
                 </select>
-                <input type="date" name="date" id="">
-                <textarea name="location" rows="7" placeholder="Your Location"></textarea>
+                <input type="date" name="date" id="" required>
+                <textarea name="location" rows="7" placeholder="Your Location" required></textarea>
                 <input type="submit" value="Submit" id="submit">
             </form>
         </div>
