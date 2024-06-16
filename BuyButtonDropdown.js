@@ -1,5 +1,24 @@
 
 // Function to show/hide the dropdown content
+function toggleDropdown() {
+  var dropdown = document.getElementById("myDropdown");
+  if (dropdown.style.display === "none" || dropdown.style.display === "") {
+    dropdown.style.display = "block";
+  } else {
+    dropdown.style.display = "none";
+  }
+}
+
+document.addEventListener("click", function (event) {
+  var dropdown = document.getElementById("myDropdown");
+  var dropbtn = document.querySelector(".dropbtn");
+  if (!dropbtn.contains(event.target) && !dropdown.contains(event.target)) {
+    dropdown.style.display = "none";
+  }
+});
+
+
+// Function to show/hide the dropdown content
 function toggleDropdown1() {
   var dropdown = document.getElementById("myDropdown1");
   if (dropdown.style.display === "none" || dropdown.style.display === "") {
