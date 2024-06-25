@@ -8,9 +8,10 @@ body {
     overflow-x: hidden;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 0;
 }
+
 /* Header styles */
 
 header {
@@ -20,7 +21,8 @@ header {
     padding: 1rem 2rem;
     background-color: #f0f0f0;
     opacity: 0;
-    animation: fadeInHeader 1s forwards;z-index: 0;
+    animation: fadeInHeader 1s forwards;
+    z-index: 0;
 }
 
 @keyframes fadeInHeader {
@@ -38,7 +40,8 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem;
-    background-color: #f0f0f0;z-index: -10;
+    background-color: #f0f0f0;
+    z-index: -10;
 }
 
 .logo {
@@ -158,7 +161,7 @@ header {
     display: flex;
     justify-content: center;
     /* Center buttons horizontally */
-    margin: 1rem auto;
+    margin: 1rem auto;margin-left: 01em;
     /* Add space between buttons and section */
 }
 
@@ -355,7 +358,7 @@ footer a:hover {
 }
 
 #search-input {
-    width: 800px;
+    max-width: 100%;
 }
 
 #openIcon {
@@ -466,4 +469,94 @@ footer a:hover {
     .close-bar {
         display: block;
     }
+}
+
+
+/* faq  */
+:root {
+    --border-color: #cccccc;
+    --background-color: #f1f1f1;
+    --transition: all 0.2s ease;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 100%;
+    margin-left: 1em;
+    background: transparent;
+    margin-top: 2em;
+}
+.accordion h2{
+    text-align: center;color: black;
+}
+@media(max-width:768px) {
+    .accordion {
+        max-width: 90%;
+        margin-left: 1em;    margin-top: 0em;
+
+
+    }
+}
+
+.accordion:hover {
+    background: transparent;
+    border: none;
+}
+
+.accordion .accordion-item {
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+.accordion .accordion-item .accordion-item-description-wrapper hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    visibility: visible;
+}
+
+.accordion .accordion-item.open .accordion-item-description-wrapper hr {
+    visibility: visible;
+}
+
+.accordion .accordion-item .accordion-item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.accordion .accordion-item .accordion-item-header .accordion-item-header-title {
+    font-weight: 600;
+}
+
+.accordion .accordion-item .accordion-item-header .accordion-item-header-icon {
+    transition: var(--transition);
+}
+
+.accordion .accordion-item.open .accordion-item-header .accordion-item-header-icon {
+    transform: rotate(-180deg);
+}
+
+.accordion .accordion-item .accordion-item-description-wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.accordion .accordion-item.open .accordion-item-description-wrapper {
+    grid-template-rows: 1fr;
+}
+
+.accordion .accordion-item .accordion-item-description-wrapper .accordion-item-description {
+    min-height: 0;
+}
+
+.accordion .accordion-item .accordion-item-description-wrapper .accordion-item-description p {
+    padding: 10px;
+    line-height: 1.5;
 }

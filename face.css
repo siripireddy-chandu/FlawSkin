@@ -93,7 +93,7 @@ main {
     margin: 20px auto;
     background: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 8px;z-index: 1;
 }
 
 h1,
@@ -154,7 +154,9 @@ h2 {
     font-weight: bold;
     color: #28a745;
 }
-
+.dropdown{
+    z-index: 800;
+}
 .book-now-btn {
     display: inline-block;
     padding: 10px 20px;

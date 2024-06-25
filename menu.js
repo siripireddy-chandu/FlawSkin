@@ -44,7 +44,7 @@ document.getElementById('buttocks-service').addEventListener('click', function()
 document.getElementById('packages-service').addEventListener('click', function() {
   window.location.href = 'packages.html';
 });
-document.getElementById('Trail-session').addEventListener('click', function() {
+document.getElementById('trailSessionBtn').addEventListener('click', function() {
   window.location.href = 'Trailsession.html';
 });
 
@@ -75,17 +75,86 @@ searchBtn.addEventListener('click', function(event) {
   // Clear search input after filtering (optional)
   // searchInput.value = '';
 });
-var acc = document.getElementsByClassName("accordion");
-    var i;
+
+
+// var acc = document.getElementsByClassName("accordion");
+//     var i;
     
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-        });
-    }
+//     for (i = 0; i < acc.length; i++) {
+//         acc[i].addEventListener("click", function () {
+//             this.classList.toggle("active");
+//             var panel = this.nextElementSibling;
+//             if (panel.style.maxHeight) {
+//                 panel.style.maxHeight = null;
+//             } else {
+//                 panel.style.maxHeight = panel.scrollHeight + "px";
+//             }
+//         });
+//     }
+
+
+// faq
+
+// one time trail session code it is not working
+document.addEventListener("DOMContentLoaded", function() {
+  var trailSessionBtn = document.getElementById("cash1");
+
+  // Check if the user has already completed the trail session
+  if (hasCompletedTrailSession()) {
+      disableTrailSessionButton();
+  }
+
+  // Add click event listener to the button
+  trailSessionBtn.addEventListener("click", function() {
+      // Check if the user has already completed the trail session
+      if (!hasCompletedTrailSession()) {
+          // Set the cookie to mark the trail session as completed (valid for 1 year)
+          setCookie("trailSessionCompleted", "true", 365);
+          // Disable the button after booking
+          disableTrailSessionButton();
+          // Optionally, redirect to the trail session page (change 'trail-session.html' to your actual page name)
+          // window.location.href = "trail-session.html";
+          alert("Trail session booked successfully!");
+      } else {
+          // Display popup message if trail session already completed
+          alert("Sorry, your trail session has already been completed.");
+      }
+  });
+});
+
+// Function to check if the trail session has been completed
+function hasCompletedTrailSession() {
+  var trailSessionCookie = getCookie("trailSessionCompleted");
+  return trailSessionCookie === "true";
+}
+
+// Function to set a cookie
+function setCookie(cookieName, cookieValue, expiryDays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (expiryDays * 24 * 60 * 60 * 1000));
+  var expires = "expires=" + d.toUTCString();
+  document.cookie = cookieName + "=" + cookieValue + ";" + expires + ";path=/";
+}
+
+// Function to get a cookie value
+function getCookie(cookieName) {
+  var name = cookieName + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var cookieArray = decodedCookie.split(';');
+  for (var i = 0; i < cookieArray.length; i++) {
+      var cookie = cookieArray[i].trim();
+      if (cookie.indexOf(name) == 0) {
+          return cookie.substring(name.length, cookie.length);
+      }
+  }
+  return "";
+}
+
+// Function to disable the trail session button
+function disableTrailSessionButton() {
+  var trailSessionBtn = document.getElementById("trailSessionBtn");
+  trailSessionBtn.disabled = true;
+  // Optionally, change the button style to indicate it's disabled
+  trailSessionBtn.style.opacity = 0.5; // Example: reduce opacity
+}
+

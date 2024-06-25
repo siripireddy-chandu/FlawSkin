@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Face Laser Hair Removal</title>
+    <title>Buttocks Laser Hair Removal</title>
     <link rel="stylesheet" href="underarms.css">
     <link rel="stylesheet" href="services-img.css">
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="COD.css">
 
     <link rel="icon" type="image/x-icon" href="flawskinlogo.png">
 
@@ -17,6 +18,33 @@
 </head>
 
 <body>
+
+    <div class="total" id="myModal">
+        <div class="hello">
+            <form method="post" action="" name="contact-form">
+                <span class="close">&times;</span>
+                <h4>Cash On Devlivery</h4>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="text" name="number" placeholder="Number" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <select name="services" id="" required>
+                    <option value="Face">Face</option>
+                    <option value="Neck">Neck</option>
+                    <option value="Underarms">Underarms</option>
+                    <option value="Hands">Hands</option>
+                    <option value="Legs">Legs</option>
+                    <option value="Back">Back</option>
+                    <option value="Bikini">Bikini</option>
+                    <option value="Chest & Abdomen">Chest & Abdomen</option>
+                    <option value="Buttocks">Buttocks</option>
+                </select>
+                <input type="date" name="date" id="" required>
+                <textarea name="location" rows="7" placeholder="Your Location" required></textarea>
+                <input type="submit" value="Submit" id="submit">
+            </form>
+        </div>
+    </div>
+
     <header>
         <div class="logo">
             <img src="flawskinlogo.png" alt="Your Company Logo">
@@ -66,12 +94,12 @@
                         <p>Offer: 50% off (₹500)</p>
                         <a href="PrePostServices.html" class="pre-post">Pre & Post Services</a>
                         <hr style="color: transparent;background:transparent;">
-                        <!-- <a href="#" class="book-now-btn">Book Now</a> -->
+                        <br> <!-- <a href="#" class="book-now-btn">Book Now</a> -->
                         <div class="dropdown">
                             <button onclick="toggleDropdown()" class="dropbtn">Book Now <i class="fa fa-caret-down"></i>
                             </button>
                             <div id="myDropdown" class="dropdown-content">
-                                <button onclick="COD()">COD</button>
+                                <button id="cash">Cash</button>
                                 <button onclick="UPI()">UPI</button>
                             </div>
                         </div>
@@ -90,11 +118,21 @@
             </div>
 
     </main>
+    <script>
+        // UNDERARRMS PAGE
+        var btn8 = document.getElementById("cash");
 
-    <footer></footer>
+        btn8.onclick = function () {
+            modal.style.display = "flex";
+        }
+
+    </script>
 
     <script src="BuyButtonDropdown.js"></script>
     <script src="navbar.js"></script>
+    <script src="COD.js"></script>
+    <script src="GoogleScript.js"></script>
+    <script src="COD-POPUP.js"></script>
 </body>
 
 </html>

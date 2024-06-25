@@ -37,7 +37,9 @@
             <div class="login">
                 <a href="contact.html" class="nav-link">Contact</a>
                 <a href="aboutus.html" class="nav-link">About Us</a>
-            
+                <a href="tel:+91 7993854229" class="nav-link">Request Call</a>
+             
+                
                 <!-- <a href="login.html">Login</a> -->
             </div>
 
@@ -65,7 +67,8 @@
     <section class="services ">
         <h2>Our Services</h2>
         <div class="service-buttons">
-            <!-- <button id="Trail-session">Trail session</button> -->
+            <button id="trailSessionBtn">Trail session</button>
+            <button id="">Full Body</button>
             <button id="face-service">Face</button>
             <button id="underarms-service">Under Arms</button>
             <button id="hands-service">Hands</button>
@@ -100,8 +103,7 @@
         </div>
 
         <body>
-            <h2>Frequently Asked Questions</h2>
-            <button class="accordion ">Is it a safe method to treat all body areas?</button>
+            <!-- <button class="accordion ">Is it a safe method to treat all body areas?</button>
             <div class="panel ">
                 <p>All areas of the body like face, hands, legs, back, chest, abdomen, bikini, underarms can be safely
                     treated. The laser hair reduction procedure is an effective procedure under the guidance of our
@@ -118,7 +120,69 @@
             <div class="panel ">
                 <p>You can book an online appointment with flawskin or call our office. Our customer care team will
                     schedule an appointment with our expert dermatologist at your given convenience and preferred time.
-                </p>    
+                </p>
+            </div> -->
+
+
+            <div class="accordion">
+                <h2>Frequently Asked Questions</h2>
+
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        <span class="accordion-item-header-title">Accordion Item 1</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chevron-down accordion-item-header-icon">
+                            <path d="m6 9 6 6 6-6" />
+                        </svg>
+                    </div>
+                    <div class="accordion-item-description-wrapper">
+                        <div class="accordion-item-description">
+                            <hr>
+                            <p>This is the description for Accordion Item 1. This is the description for Accordion
+                                Item 1.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        <span class="accordion-item-header-title">Accordion Item 2</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chevron-down accordion-item-header-icon">
+                            <path d="m6 9 6 6 6-6" />
+                        </svg>
+                    </div>
+                    <div class="accordion-item-description-wrapper">
+                        <div class="accordion-item-description">
+                            <hr>
+                            <p>This is the description for Accordion Item 2. This is the description for Accordion
+                                Item 2. This is the description for Accordion Item 2. This is the description for
+                                Accordion Item 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        <span class="accordion-item-header-title">Accordion Item 3</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chevron-down accordion-item-header-icon">
+                            <path d="m6 9 6 6 6-6" />
+                        </svg>
+                    </div>
+                    <div class="accordion-item-description-wrapper">
+                        <div class="accordion-item-description">
+                            <hr>
+                            <p>This is the description for Accordion Item 3. This is the description for Accordion
+                                Item 3. This is the description for Accordion Item 3. This is the description for
+                                Accordion Item 3. This is the description for Accordion Item 3. This is the
+                                description for Accordion Item 3. This is the description for Accordion Item 3.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
     </section>
 
     <footer>
@@ -132,6 +196,15 @@
     <script src="menu.js"></script>
     <script src="navbar.js"></script>
 
+
+    <script>
+        document.querySelectorAll(".accordion-item").forEach((item) => {
+            item.querySelector(".accordion-item-header").addEventListener("click", () => {
+                item.classList.toggle("open");
+            });
+        });
+
+    </script>
 
 </body>
 

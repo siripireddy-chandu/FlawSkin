@@ -21,12 +21,13 @@ document.addEventListener("click", function (event) {
 // Function to show/hide the dropdown content
 function toggleDropdown1() {
   var dropdown = document.getElementById("myDropdown1");
-  if (dropdown.style.display === "none" || dropdown.style.display === "") {
-    dropdown.style.display = "block";
+  if (dropdown.style.display === "block") {
+      dropdown.style.display = "none";
   } else {
-    dropdown.style.display = "none";
+      dropdown.style.display = "block";
   }
 }
+
 
 document.addEventListener("click", function (event) {
   var dropdown = document.getElementById("myDropdown1");
@@ -135,5 +136,4 @@ document.addEventListener("click", function (event) {
     dropdown.style.display = "none";
   }
 });
-
 
