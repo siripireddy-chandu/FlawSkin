@@ -22,12 +22,12 @@
             gap: 1em;
             flex-wrap: wrap;
         }
-        
+
         img {
             height: 600px;
             width: 600px;
         }
-        
+
         a {
             text-decoration: none;
             position: absolute;
@@ -40,11 +40,18 @@
             border-radius: 20px;
             font-weight: 1000;
         }
-        
+
         a:hover {
             background: blueviolet;
             color: white;
             transition: .5s;
+        }
+
+        @media(max-width:768px) {
+            .pre-service-content img {
+                height: 300px;
+                width: 300px;
+            }
         }
     </style>
 </head>
