@@ -47,6 +47,9 @@ document.getElementById('packages-service').addEventListener('click', function()
 document.getElementById('trailSessionBtn').addEventListener('click', function() {
   window.location.href = 'Trailsession.html';
 });
+document.getElementById('full-body').addEventListener('click', function() {
+  window.location.href = 'fulll body.html';
+});
 
 const searchInput = document.getElementById('search-input');
 const searchBtn = document.getElementById('search-btn');
