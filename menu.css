@@ -1,4 +1,9 @@
 /* General styles */
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: 0;
+}
 
 body {
     margin: 0;
@@ -39,7 +44,9 @@ header {
 }
 
 .logo img {
-    height: 100px;position: relative;left: 1em;
+    height: 100px;
+    position: relative;
+    left: 1em;
 }
 
 .company-name {
@@ -151,7 +158,8 @@ header {
     display: flex;
     justify-content: center;
     /* Center buttons horizontally */
-    margin: 1rem auto;margin-left: 01em;
+    margin: 1rem auto;
+    margin-left: 01em;
     /* Add space between buttons and section */
 }
 
@@ -478,13 +486,17 @@ footer a:hover {
     background: transparent;
     margin-top: 2em;
 }
-.accordion h2{
-    text-align: center;color: black;
+
+.accordion h2 {
+    text-align: center;
+    color: black;
 }
+
 @media(max-width:768px) {
     .accordion {
         max-width: 90%;
-        margin-left: 1em;    margin-top: 0em;
+        margin-left: 1em;
+        margin-top: 0em;
 
 
     }
