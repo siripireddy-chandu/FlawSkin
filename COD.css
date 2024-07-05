@@ -5,7 +5,9 @@
     font-family: 'poppins', sans-serif;
     font-size: 18px;
 }
-
+::-webkit-scrollbar{
+    width:0;
+}
 .total {
     display: none;
     position: fixed;
@@ -19,6 +21,8 @@
     background-color: rgba(0, 0, 0, 0.4);
     align-items: center;
     justify-content: center;
+    padding-top:2em;
+    padding-bottom:2em;
 }
 
 .close {
@@ -36,11 +40,13 @@
 }
 
 .hello {
-    width: 500px;
+    width: 700px;
     padding: 30px;
     border: 1px solid #eeeeee;
     border-radius: 10px;
     background-color: #003b5b;
+      padding-top:2em;
+    padding-bottom:2em;
 }
 
 h4 {
