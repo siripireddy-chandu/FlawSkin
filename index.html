@@ -394,10 +394,30 @@
                     return;
                 }
 
+
+                // Validate date
+                const dateTime = form.elements['Date Time'].value;
+                const selectedDate = new Date(dateTime);
+                const today = new Date();
+                today.setHours(0, 0, 0, 0); // Set time to 00:00:00 for comparison
+
+                if (selectedDate < today) {
+                    alert("The date and time cannot be earlier than today's date.");
+                    return;
+                }
+
+                // Validate year (ensure it is 4 digits)
+                const year = selectedDate.getFullYear();
+                if (year.toString().length !== 4) {
+                    alert("The year must be exactly 4 digits long.");
+                    return;
+                }
+
+
                 // If validation passes, submit the form
                 fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                     .then(response => {
-                        alert("Thank you! Your request is received successfully.");
+                        alert("Thank you! Your order is successfully confirmed.");
                         window.location.reload();
                     })
                     .catch(error => console.error('Error!', error.message));
