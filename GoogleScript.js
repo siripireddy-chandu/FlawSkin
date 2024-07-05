@@ -54,7 +54,7 @@ if (year.toString().length !== 4) {
 // If validation passes, submit the form
         fetch(scriptURL, { method: 'POST', body: new FormData(form) })
             .then(response => {
-                alert("Thank you! Your order is successfully confirmed.");
+                alert("Thank you! Your order confirmed.");
                 window.location.reload();
             })
             .catch(error => console.error('Error!', error.message));
