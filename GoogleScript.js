@@ -33,6 +33,18 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
+
+ // Validate date
+ const dateTime = form.elements['Date Time'].value;
+ const selectedDate = new Date(dateTime);
+ const today = new Date();
+ today.setHours(0, 0, 0, 0); // Set time to 00:00:00 for comparison
+
+ if (selectedDate < today) {
+     alert("The date and time cannot be earlier than today's date.");
+     return;
+ }
+
         // If validation passes, submit the form
         fetch(scriptURL, { method: 'POST', body: new FormData(form) })
             .then(response => {
