@@ -286,5 +286,5 @@ a.ssolink {
     font-weight: bolder;
     text-align: center;
     font-size: 50px;
-    background: blue;min-height: 40px;max-width: 100%;opacity: 0.7;border-radius: 50%;
+    /* background: blue;min-height: 40px;max-width: 100%;opacity: 0.7;border-radius: 50%; */
 }
