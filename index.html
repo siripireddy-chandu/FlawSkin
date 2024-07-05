@@ -246,25 +246,6 @@
         </div>
 
         <body>
-            <!-- <button class="accordion ">Is it a safe method to treat all body areas?</button>
-            <div class="panel ">
-                <p>All areas of the body like face, hands, legs, back, chest, abdomen, bikini, underarms can be safely
-                    treated. The laser hair reduction procedure is an effective procedure under the guidance of our
-                    dermatologists. </p>
-            </div>
-            <button class="accordion ">How many LHR sessions are needed to see results?</button>
-            <div class="panel ">
-                <p>Most of our clients will experience an immense change in thickness and growth of hair within 6 to 8
-                    sessions. But, depending on the client’s age, hair type, and underlying hormonal condition, results
-                    may vary.</p>
-            </div>
-            <button class="accordion ">How to get started with the laser hair reduction treatment?</button>
-            <div class="panel ">
-                <p>You can book an online appointment with flawskin or call our office. Our customer care team will
-                    schedule an appointment with our expert dermatologist at your given convenience and preferred time.
-                </p>
-            </div> -->
-
 
             <div class="accordion">
                 <h2>Frequently Asked Questions</h2>
@@ -358,7 +339,7 @@
 
     <script>
 
-        /*  const scriptURL = 'https://script.google.com/macros/s/AKfycbzsHQx9DjEtVEzTHFAzXBcUcCbSDT44yTVrh8JCloWueZQYk62XK-yOJEnqO8M9iDSq/exec'
+          const scriptURL = 'https://script.google.com/macros/s/AKfycbw82ZugCL7qspThNBi0DLx8FgQnGfFwNCyRb8S17c_TG2O8a_tjgFPmA8DAQxGJjF4g/exec'
   
           const form = document.forms['request-form']
   
@@ -369,58 +350,58 @@
                   .then(() => { window.location.reload(); })
                   .catch(error => console.error('Error!', error.message))
           })
-  */
+  
 
 
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbw82ZugCL7qspThNBi0DLx8FgQnGfFwNCyRb8S17c_TG2O8a_tjgFPmA8DAQxGJjF4g/exec';
+        // const scriptURL = 'https://script.google.com/macros/s/AKfycbw82ZugCL7qspThNBi0DLx8FgQnGfFwNCyRb8S17c_TG2O8a_tjgFPmA8DAQxGJjF4g/exec';
 
-        document.addEventListener('DOMContentLoaded', () => {
-            const form = document.forms['request-form'];
+        // document.addEventListener('DOMContentLoaded', () => {
+        //     const form = document.forms['request-form'];
 
-            form.addEventListener('submit', e => {
-                e.preventDefault();
+        //     form.addEventListener('submit', e => {
+        //         e.preventDefault();
 
-                // Validate mobile number
-                const number = form.elements['number'].value;
-                const numberPattern = /^[6-9]\d{9}$/;
+        //         // Validate mobile number
+        //         const number = form.elements['number'].value;
+        //         const numberPattern = /^[6-9]\d{9}$/;
 
-                if (!number) {
-                    alert("Please enter a mobile number.");
-                    return;
-                }
+        //         if (!number) {
+        //             alert("Please enter a mobile number.");
+        //             return;
+        //         }
 
-                if (!numberPattern.test(number)) {
-                    alert("Mobile number should start with 6, 7, 8, or 9 and be 10 digits long.");
-                    return;
-                }
+        //         if (!numberPattern.test(number)) {
+        //             alert("Mobile number should start with 6, 7, 8, or 9 and be 10 digits long.");
+        //             return;
+        //         }
 
-                // Validate date
-                const dateTime = form.elements['Date Time'].value;
-                const selectedDate = new Date(dateTime);
-                const today = new Date();
-                today.setHours(0, 0, 0, 0); // Set time to 00:00:00 for comparison
+        //         // Validate date
+        //         const dateTime = form.elements['Date Time'].value;
+        //         const selectedDate = new Date(dateTime);
+        //         const today = new Date();
+        //         today.setHours(0, 0, 0, 0); // Set time to 00:00:00 for comparison
 
-                if (selectedDate < today) {
-                    alert("The date and time cannot be earlier than today's date.");
-                    return;
-                }
+        //         if (selectedDate < today) {
+        //             alert("The date and time cannot be earlier than today's date.");
+        //             return;
+        //         }
 
 
-                // Validate year (ensure it is 4 digits)
-                const year = selectedDate.getFullYear();
-                if (year.toString().length !== 4) {
-                    alert("The year must be exactly 4 digits long.");
-                    return;
-                }
-                // If validation passes, submit the form
-                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                    .then(response => {
-                        alert("Thank you! Your order is successfully confirmed.");
-                        window.location.reload();
-                    })
-                    .catch(error => console.error('Error!', error.message));
-            });
-        });
+        //         // Validate year (ensure it is 4 digits)
+        //         const year = selectedDate.getFullYear();
+        //         if (year.toString().length !== 4) {
+        //             alert("The year must be exactly 4 digits long.");
+        //             return;
+        //         }
+        //         // If validation passes, submit the form
+        //         fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        //             .then(response => {
+        //                 alert("Thank you! Your order is successfully confirmed.");
+        //                 window.location.reload();
+        //             })
+        //             .catch(error => console.error('Error!', error.message));
+        //     });
+        // });
     </script>
 
 
