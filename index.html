@@ -372,16 +372,16 @@
   */
 
 
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzsHQx9DjEtVEzTHFAzXBcUcCbSDT44yTVrh8JCloWueZQYk62XK-yOJEnqO8M9iDSq/exec';
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyFhBtLZW3umraSterInVdqaT8eUXDXXcHKJeWAi5OMGpJN6pcyaOhlb34YAMPE-7s/exec';
 
         document.addEventListener('DOMContentLoaded', () => {
-            const form = document.forms['request-form'];
+            const form = document.forms['contact-form'];
 
             form.addEventListener('submit', e => {
                 e.preventDefault();
 
                 // Validate mobile number
-                const number = form.elements['Number'].value;
+                const number = form.elements['number'].value;
                 const numberPattern = /^[6-9]\d{9}$/;
 
                 if (!number) {
@@ -393,7 +393,6 @@
                     alert("Mobile number should start with 6, 7, 8, or 9 and be 10 digits long.");
                     return;
                 }
-
 
                 // Validate date
                 const dateTime = form.elements['Date Time'].value;
@@ -412,7 +411,6 @@
                     alert("The year must be exactly 4 digits long.");
                     return;
                 }
-
 
                 // If validation passes, submit the form
                 fetch(scriptURL, { method: 'POST', body: new FormData(form) })
