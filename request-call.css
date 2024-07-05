@@ -29,8 +29,8 @@ a {
     justify-content: center;
 }
 
-@media(max-width:768px){
-    .login-root{
+@media(max-width:768px) {
+    .login-root {
         position: fixed;
     }
 }
