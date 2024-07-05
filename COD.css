@@ -7,32 +7,32 @@
 }
 
 .total {
-    display: none;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    min-height: 200vh;
-    overflow-y: scroll;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
-    align-items: center;
-    justify-content: center;
-}
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        min-height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        align-items: center;
+        justify-content: center;
+    }
+    .close {
+        color: white;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
 
-.close {
-    color: white;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #aaaaaa;
-    text-decoration: none;
-    cursor: pointer;
-}
+    .close:hover,
+    .close:focus {
+        color: #aaaaaa;
+        text-decoration: none;
+        cursor: pointer;
+    }
 
 .hello {
     width: 500px;
@@ -40,8 +40,6 @@
     border: 1px solid #eeeeee;
     border-radius: 10px;
     background-color: #003b5b;
-    min-height: 200vh;
-    overflow-y: scroll;
 }
 
 h4 {
@@ -50,8 +48,7 @@ h4 {
     color: white;
 }
 
-input,
-select {
+input,select {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
