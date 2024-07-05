@@ -357,7 +357,7 @@
                 e.preventDefault();
 
                 // Validate mobile number
-                const number = form.elements['number'].value;
+                const number = form.elements['Number'].value;
                 const numberPattern = /^[6-9]\d{9}$/;
 
                 if (!number) {
@@ -391,7 +391,7 @@
                 // If validation passes, submit the form
                 fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                     .then(response => {
-                        alert("Thank you! Your order is successfully confirmed.");
+                        alert("Thank you for reaching us ! We will get back to you soon ");
                         window.location.reload();
                     })
                     .catch(error => console.error('Error!', error.message));
