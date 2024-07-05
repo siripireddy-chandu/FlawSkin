@@ -39,7 +39,7 @@
     padding: 30px;
     border: 1px solid #eeeeee;
     border-radius: 10px;
-    background-color: #003b5b;
+    background-color: #003b5b;min-height: 100vh;overflow-y: scroll;
 }
 
 h4 {
