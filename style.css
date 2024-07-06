@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: 0;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100%;
+    background: skyblue;
+}
+
+.navbar-brand img {
+    height: 65px;
+    width: 65px;
+}
+
+.nav-item a {
+    color: #fff;
+    /* font-weight: bolder;
+    background: rgb(68, 126, 184);
+    margin: 1em;
+    border-radius: 20px;
+    padding: 5px 20px;
+    text-align: center; */
+
+    margin: 1em;
+}
+
+#navbarText {
+    position: absolute;
+    float: right;
+    right: 10px;
+}
+
+@media(max-width:768px) {
+    .nav-item a {
+        color: #fff;
+        font-weight: bolder;
+        background: rgb(68, 126, 184);
+        margin: 1em;
+        border-radius: 20px;
+        padding: 5px 20px;
+        text-align: center;
+        width: 100%;
+        margin: 1em;
+    }
+
+    #navbarText {
+        position: relative;
+        right: 1em;
+    }
+}
+
+/* image scroll */
+
+/* Image scroll section styles */
+
+.image-scroll {
+    overflow: hidden;
+    position: relative;
+}
+
+.image-container {
+    display: flex;
+    animation: image-scroll 20s infinite linear;transition: .5s ease-in-out;
+}
+
+@keyframes image-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.image-container img {
+    width: 30%;
+    object-fit: fill;
+}
+
+@media(max-width:768px) {
+    .image-container img {
+        width: 25%;
+        height: 100px;
+    }
+}
+
+/* serevices section */
+
+.service-section {
+    min-height: 50vh;
+    max-width: 100%;
+    background: skyblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 2em;
+}
+
+@media(max-width:768px) {
+    .service-section {
+        min-height: 30vh;
+    }
+}
+
+.service-section h1 {
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    top: 1em;
+}
+
+.services-card {
+    min-height: 200px;
+    max-width: 100%;
+    margin-top: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.service-box a {
+    background: white;
+    margin: 5px;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    /* box-shadow: 1px 2px 5px 1px rgb(0, 0, 0);
+    border: 2px solid whitesmoke; */
+}
+
+/* floating */
+
+.floating {
+    min-height: 20vh;
+    max-width: 100%;
+    background: skyblue;
+}
+
+.floating p {
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    animation: float 2s infinite;
+}
+
+.floating p span {
+    color: blue;
+    font-weight: bolder;
+}
+
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@media(max-width:768px) {
+    .floating {
+        min-height: 11vh;
+    }
+
+    .floating p {
+
+        font-size: 16px;
+    }
+}
+
+/* why flawskin */
+
+.why-flawskin {
+    min-height: 50vh;
+    max-width: 100%;
+    background: skyblue;
+    padding: 5px;
+}
+
+@media(max-width:768px) {
+    .why-flawskin {
+        min-height: 22vh;
+    }
+}
+
+.why-flawskin img {
+    height: 97%;
+    width: 100%;
+}
+
+
+/* FAQ */
+.faq {
+    min-height: 50vh;
+    max-width: 100%;
+    background: skyblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-bottom: 1em;
+}
+
+@media(max-width:768px) {
+    .faq {
+        min-height: 33vh;
+    }
+}
+
+.faq h2 {
+    margin-bottom: 10px;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    margin: 10px 0;
+    width: 60%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+
+.active,
+.accordion:hover {
+    background-color: white;
+    border: 1px dashed deepskyblue;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    width: 60%;
+    border-radius: 10px;
+}
+
+@media(max-width:768px) {
+    .accordion {
+        width: 90%;
+    }
+
+    .panel {
+        width: 90%;
+    }
+}
+
+/* footer */
+.fa-ul {
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
