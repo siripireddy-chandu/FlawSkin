@@ -137,3 +137,21 @@ document.addEventListener("click", function (event) {
   }
 });
 
+// Function to show/hide the dropdown content
+function toggleDropdown7() {
+  var dropdown = document.getElementById("myDropdown7");
+  if (dropdown.style.display === "none" || dropdown.style.display === "") {
+    dropdown.style.display = "block";
+  } else {
+    dropdown.style.display = "none";
+  }
+}
+
+document.addEventListener("click", function (event) {
+  var dropdown = document.getElementById("myDropdown7");
+  var dropbtn = document.querySelector(".dropbtn7");
+  if (!dropbtn.contains(event.target) && !dropdown.contains(event.target)) {
+    dropdown.style.display = "none";
+  }
+});
+
