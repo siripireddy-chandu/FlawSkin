@@ -22,7 +22,7 @@
     align-items: center;
     justify-content: center;
     padding-top:2em;
-    padding-bottom:2em;
+    padding-bottom:2em;z-index: 10000;
 }
 
 .close {
@@ -78,4 +78,46 @@ textarea {
 
 #submit:hover {
     background-color: #333333;
+}
+
+
+/* note */
+
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+} */
+
+.note-container {
+    background-color: #fff;
+    border: 2px solid #f0ad4e;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.animated-note {
+    color: #d9534f;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    animation: highlight-animation 2s ease-in-out infinite;
+}
+
+@keyframes highlight-animation {
+    0% {
+        background-color: #f0ad4e;
+    }
+    50% {
+        background-color: #fff;
+    }
+    100% {
+        background-color: #f0ad4e;
+    }
 }
