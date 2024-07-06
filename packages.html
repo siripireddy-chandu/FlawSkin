@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="services-img.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="COD.css">
+    <link rel="stylesheet" href="style.css">
+
     <link rel="icon" type="image/x-icon" href="flawskinlogo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
@@ -55,39 +57,34 @@
         </div>
     </div>
 
-    <header>
-        <div class="logo">
-            <img src="FlawSkin-Logo.png" alt="Your Company Logo">
-
-        </div>
-        <div class="menu-bar">
-            <i onclick="openNav()" id="openIcon" class="fa fa-bars"></i>
-        </div>
-        <div class="navbar" id="nav">
-            <!-- <div class="search-bar">
-                <form action="#">
-                    <input type="text" id="search-input" placeholder="Search Services">
-                    <link rel="stylesheet"
-                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-                        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-                        crossorigin="anonymous" referrerpolicy="no-referrer" />
-                    <button type="submit" id="search-btn"> <i class="fas fa-search"></i></button>
-                </form>
-            </div> -->
-
-            <div class="login">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="contact.html" class="nav-link">Contact</a>
-                <a href="aboutus.html" class="nav-link">About Us</a>
-
-                <!-- <a href="login.html">Login</a> -->
-            </div>
-
-            <div class="close-bar">
-                <i onclick="closeNav()" id="closeIcon" class="fa fa-close"></i>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> <img src="https://flawskin.com/FlawSkin-Logo.png" alt=""> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="btn btn-dark" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="#">Request A Call</a>
+                    </li>
+                </ul>
+                <!-- <span class="navbar-text">
+                    Navbar text with an inline element
+                </span> -->
             </div>
         </div>
-    </header>
+    </nav>
 
     <main>
         <h1>Combo packages</h1>
