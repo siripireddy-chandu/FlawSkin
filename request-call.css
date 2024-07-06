@@ -23,7 +23,7 @@ a {
     width: 100%;
     min-height: 100vh;
     overflow-y: hidden;
-    position: fixed;
+    position: relative;
     z-index: 10000;
     align-items: center;
     justify-content: center;
@@ -78,6 +78,8 @@ a {
     grid-template-columns: [start] 1fr [left-gutter] repeat(16, 86.6px) [left-gutter] 1fr [end];
     -ms-grid-columns: [start] 1fr [left-gutter] (86.6px)[] [left-gutter] 1fr [end];
     -ms-grid-rows: [top] 1fr [top-gutter] (64px)[] [bottom-gutter] 1fr [bottom];
+
+
 }
 
 .box-divider--light-all-2 {
@@ -292,6 +294,6 @@ a.ssolink {
     font-size: 50px;
     /* background: blue;min-height: 40px;max-width: 100%;opacity: 0.7;border-radius: 50%; */
 }
-.formbg-outer{
+.formbg-inner{
     overflow-y: scroll;
 }
