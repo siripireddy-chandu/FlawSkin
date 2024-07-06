@@ -18,8 +18,8 @@
     } */
 
     .content-img img {
-        height: 100px;
-        min-width: 100px;
+        height: 60px;
+        min-width: 60px;
         border-radius: 50%;
     }
 }
