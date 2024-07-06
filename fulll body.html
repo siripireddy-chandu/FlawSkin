@@ -43,13 +43,13 @@
 
                 <textarea name="location" rows="3"
                     placeholder="Share Your Exact Location along with the pincode and door number" required></textarea>
-                    <!-- note -->
+                <!-- note -->
                 <div class="note-container">
                     <p class="animated-note">For long-distance orders, travel allowance will be charged. The therapist
                         will collect this amount directly.</p>
                 </div>
-                    <input type="submit" value="Confirm Order" id="submit">
-                </form>
+                <input type="submit" value="Confirm Order" id="submit">
+            </form>
         </div>
     </div>
 
@@ -87,7 +87,7 @@
         <p>Get smooth, hair-free skin on your Full Bod with our safe and effective laser hair removal treatments.</p>
 
         <div class="service-areas">
-            <h2  style="color: #0091ffc4;font-size: 20px;">Areas</h2>
+            <h2 style="color: #0091ffc4;font-size: 20px;">Areas</h2>
 
             <div class="service-area">
                 <div class="store">
@@ -181,6 +181,9 @@
         var btn7 = document.getElementById("cash");
         var btn8 = document.getElementById("cash1");
 
+        btn7.onclick = function () {
+            modal.style.display = "flex";
+        }
         btn8.onclick = function () {
             modal.style.display = "flex";
         }
