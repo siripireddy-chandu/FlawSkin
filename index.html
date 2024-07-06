@@ -4,421 +4,300 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FLAWSKIN</title>
-    <link rel="stylesheet" href="menu.css">
-    <link rel="stylesheet" href="request-call.css">
-    <link rel="icon" type="image/x-icon" href="flawskinlogo.png">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- font awensome -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- these for request call -->
-
-
 </head>
 
 <body>
 
-    <div class="till">
-        <div id="login-root" class="login-root" style="display: none;">
-            <div class="box-root flex-flex flex-direction--column" style="min-height: 100vh;flex-grow: 1;">
-                <div class="loginbackground box-background--white padding-top--64">
-                    <div class="loginbackground-gridContainer">
 
-                        <!-- Background elements -->
-
-                        <div class="loginbackground box-background--white padding-top--64">
-                            <div class="loginbackground-gridContainer">
-                                <div class="box-root flex-flex" style="grid-area: top / start / 8 / end;">
-                                    <div class="box-root"
-                                        style="background-image: linear-gradient(white 0%, rgb(247, 250, 252) 33%); flex-grow: 1;">
-                                    </div>
-                                </div>
-                                <div class="box-root flex-flex" style="grid-area: 4 / 2 / auto / 5;">
-                                    <div class="box-root box-divider--light-all-2 animationLeftRight tans3s"
-                                        style="flex-grow: 1;">
-                                    </div>
-                                </div>
-                                <div class="box-root flex-flex" style="grid-area: 6 / start / auto / 2;">
-                                    <div class="box-root box-background--blue800" style="flex-grow: 1;"></div>
-                                </div>
-                                <div class="box-root flex-flex" style="grid-area: 7 / start / auto / 4;">
-                                    <div class="box-root box-background--blue animationLeftRight" style="flex-grow: 1;">
-                                    </div>
-                                </div>
-                                <div class="box-root flex-flex" style="grid-area: 8 / 4 / auto / 6;">
-                                    <div class="box-root box-background--gray100 animationLeftRight tans3s"
-                                        style="flex-grow: 1;">
-                                    </div>
-                                </div>
-                                <div class="box-root flex-flex" style="grid-area: 2 / 15 / auto / end;">
-                                    <div class="box-root box-background--cyan200 animationRightLeft tans4s"
-                                        style="flex-grow: 1;">
-                                    </div>
-                                </div>
-                                <div class="box-root flex-flex" style="grid-area: 3 / 14 / auto / end;">
-                                    <div class="box-root box-background--blue animationRightLeft" style="flex-grow: 1;">
-                                    </div>
-                                </div>
-                                <div class="box-root flex-flex" style="grid-area: 4 / 17 / auto / 20;">
-                                    <div class="box-root box-background--gray100 animationRightLeft tans4s"
-                                        style="flex-grow: 1;">
-                                    </div>
-                                </div>
-                                <div class="box-root flex-flex" style="grid-area: 5 / 14 / auto / 17;">
-                                    <div class="box-root box-divider--light-all-2 animationRightLeft tans3s"
-                                        style="flex-grow: 1;">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box-root padding-top--24 flex-flex flex-direction--column"
-                    style="flex-grow: 1; z-index: 9;">
-
-                    <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
-                        <!-- <h1><a href="http://blog.stackfindover.com/" rel="dofollow">FlawSkin</a></h1> -->
-                        <div class="logo">
-                            <img src="FlawSkin-Logo.png" alt="Your Company Logo">
-                            <!-- <h1 class="company-name">flawskin</h1> -->
-                        </div>
-                    </div>
-                    <div class="formbg-outer">
-                        <div class="formbg">
-
-                            <span id="close-call-btn" class="close-icon" style="cursor: pointer;">&times;</span>
-
-
-                            <div class="formbg-inner padding-horizontal--48">
-                                <span class="padding-bottom--15">Request A Call</span>
-                                <form id="stripe-login" method="post" action="" name="request-form">
-                                    <div class="field padding-bottom--24">
-                                        <label for="Name">Name</label>
-                                        <input type="text" name="Name" required>
-                                    </div>
-                                    <div class="field padding-bottom--24">
-                                        <label for="Email">Email</label>
-                                        <input type="email" name="Email" required>
-                                    </div>
-                                    <div class="field padding-bottom--24">
-                                        <label for="Number">Number</label>
-                                        <input type="text" name="Number" id="num-range" required>
-                                    </div>
-                                    <div class="field padding-bottom--24">
-                                        <label for="Age">Age</label>
-                                        <input type="number" name="Age" max="100" required>
-                                    </div>
-                                    <div class="field padding-bottom--24">
-                                        <label for="Services">Services</label>
-                                        <select name="Services" id="" required>
-
-                                            <option value="Face">Face</option>
-                                            <option value="Neck">Neck</option>
-                                            <option value="Underarms">Underarms</option>
-                                            <option value="Hands">Hands</option>
-                                            <option value="Legs">Legs</option>
-                                            <option value="Back">Back</option>
-                                            <option value="Bikini">Bikini</option>
-                                            <option value="Chest & Abdomen">Chest & Abdomen</option>
-                                            <option value="Buttocks">Buttocks</option>
-
-                                            <!-- pakages service -->
-                                            <option value="Full Legs + Full Hands + Underarms">Full Legs + Full Hands +
-                                                Underarms</option>
-                                            <option value="Full Face + Underarms">Full Face + Underarms</option>
-                                            <option value="Bikini + Buttocks">Bikini + Buttocks
-                                            </option>
-                                            <option value="Full Face + Bikini">Full Face + Bikini
-                                            </option>
-                                            <option value="Full Front + Full Back">Full Front + Full Back
-                                            </option>
-                                            <option value="Full Hands + Underarms">Full Hands + Underarms
-                                            </option>
-
-                                        </select>
-                                    </div>
-                                    <div class="field padding-bottom--24">
-                                        <label for="Date">Date</label>
-                                        <input type="datetime-local" name="Date Time" id="" required>
-                                    </div>
-                                    <div class="field padding-bottom--24">
-                                        <input type="submit" value="Send Request" id="submit">
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> <img src="https://flawskin.com/FlawSkin-Logo.png" alt=""> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="btn btn-dark" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="#">Request A Call</a>
+                    </li>
+                </ul>
+                <!-- <span class="navbar-text">
+                    Navbar text with an inline element
+                </span> -->
             </div>
         </div>
-    </div>
+    </nav>
 
-    <header>
-        <div class="logo">
-            <img src="FlawSkin-Logo.png" alt="Your Company Logo">
-            <!-- <h1 class="company-name">flawskin</h1> -->
-        </div>
-        <div class="menu-bar">
-            <i onclick="openNav()" id="openIcon" class="fa fa-bars"></i>
-        </div>
-        <div class="navbar" id="nav">
-            <div class="search-bar">
-                <form action="#">
-                    <input type="text" id="search-input" placeholder="Search Services">
-                    <link rel="stylesheet"
-                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-                        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-                        crossorigin="anonymous" referrerpolicy="no-referrer" />
-                    <button type="submit" id="search-btn"> <i class="fas fa-search"></i></button>
-                </form>
-            </div>
 
-            <div class="login">
-                <a href="contact.html" class="nav-link">Contact</a>
-                <a href="aboutus.html" class="nav-link">About Us</a>
-                <!-- <a href="tel:+91 7993854229" class="nav-link">Request Call</a> -->
-                <!-- <a href="login.html">Login</a> -->
-                <a class="nav-link" id="request-call-btn" style="cursor: pointer;">Request Call</a>
-                <!-- <button >Request Call</button> -->
 
-            </div>
-
-            <div class="close-bar">
-                <i onclick="closeNav()" id="closeIcon" class="fa fa-close"></i>
-            </div>
-        </div>
-    </header>
-
+    <!-- images scroll bar  -->
+<!-- 
     <section class="image-scroll ">
         <div class="image-container ">
-            <img src="Make Your Body Beautiful with Laser Hair Removal Singapore.jpeg " alt="Before & After Image 1 ">
-            <img src="Free Photo _ Laser epilation, hair removal therapy (1).jpeg " alt="Before & After Image 2 ">
-            <img src="Premium Photo _ Diode laser hair removal beautician removes hair on beautiful female arm hair removal for smooth skin laser procedure hand with epilation device treatment.jpeg "
-                alt="Before & After Image 3 ">
-            <img src="download.jpeg " alt="Before & After Image 3 ">
-            <img src="Make Your Body Beautiful with Laser Hair Removal Singapore.jpeg " alt="Before & After Image 1 ">
-            <img src="Free Photo _ Laser epilation, hair removal therapy (1).jpeg " alt="Before & After Image 2 ">
-            <img src="Premium Photo _ Diode laser hair removal beautician removes hair on beautiful female arm hair removal for smooth skin laser procedure hand with epilation device treatment.jpeg "
-                alt="Before & After Image 3 ">
-            <img src="download.jpeg" alt="Before & After Image 3 ">
+            <img src="scroll img-1.jpeg" alt="Before &amp; After Image 1 ">
+            <img src="scroll img-2.jpeg" alt="Before &amp; After Image 3 ">
+            <img src="scroll img-3.jpeg" alt="Before &amp; After Image 3 ">
+            <img src="scroll img-4.jpeg" alt="Before &amp; After Image 1 ">
+            <img src="scroll img-1.jpeg" alt="Before &amp; After Image 2 ">
+            <img src="scroll img-2.jpeg" alt="Before &amp; After Image 3 ">
+            <img src="scroll img-3.jpeg" alt="Before &amp; After Image 3 ">
+        </div>
+    </section> -->
+
+    <section class="image-scroll">
+        <div class="image-container">
+            <img src="scroll img-1.jpeg" alt="Before &amp; After Image 1">
+            <img src="scroll img-2.jpeg" alt="Before &amp; After Image 2">
+            <img src="scroll img-3.jpeg" alt="Before &amp; After Image 3">
+            <img src="scroll img-4.jpeg" alt="Before &amp; After Image 4">
+            <!-- Duplicate the images for seamless loop -->
+            <img src="scroll img-1.jpeg" alt="Before &amp; After Image 1">
+            <img src="scroll img-2.jpeg" alt="Before &amp; After Image 2">
+            <img src="scroll img-3.jpeg" alt="Before &amp; After Image 3">
+            <img src="scroll img-4.jpeg" alt="Before &amp; After Image 4">
         </div>
     </section>
+    
 
+    <!-- our services section -->
 
-    <section class="services ">
-        <h2>Our Services</h2>
-        <div class="service-buttons">
-            <button id="trailSessionBtn">Trail session</button>
-            <button id="full-body">Full Body</button>
-            <button id="face-service">Face</button>
-            <button id="underarms-service">Under Arms</button>
-            <button id="hands-service">Hands</button>
-            <button id="legs-service">Legs</button>
-            <button id="back-service">Back</button>
-            <button id="bikini-service">Bikini</button>
-            <button id="chest-abdomen-service">Chest & Abdomen</button>
-            <button id="buttocks-service">Buttocks</button>
-            <button id="packages-service">Packages</button>
-        </div>
-        <div class="home-service-banner">
-            Home Service Available Across <span>Bangalore</span>
-        </div>
+    <section class="service-section">
 
-        <img class="image pixelated" src="home svg.svg " alt="Smiley " style="width: 100%;height: 350px; ">
+        <h1>Our Services</h1>
 
-        <head>
-            <!-- Required meta tags -->
-            <meta charset="utf-8 ">
-            <meta name="viewport " content="width=device-width, initial-scale=1 ">
-            <!-- Font Awesome Icons  -->
-            <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css "
-                integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-                crossorigin=" anonymous " />
-            <!-- Google Fonts  -->
-            <link rel="preconnect " href="https://fonts.googleapis.com ">
-            <link rel="preconnect " href="https://fonts.gstatic.com " crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap " rel="stylesheet ">
-            <title>FAQ Page using HTML CSS, and JavaScript - @code.scientist x @codingtorque</title>
-        </head>
-
-        </div>
-
-        <body>
-
-            <div class="accordion">
-                <h2>Frequently Asked Questions</h2>
-
-                <div class="accordion-item">
-                    <div class="accordion-item-header">
-                        <span class="accordion-item-header-title">is it is a safe method to treat all body areas?</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-chevron-down accordion-item-header-icon">
-                            <path d="m6 9 6 6 6-6" />
-                        </svg>
-                    </div>
-                    <div class="accordion-item-description-wrapper">
-                        <div class="accordion-item-description">
-                            <hr>
-                            <p>All areas of the body like face, hands, legs, back, chest, abdomen, bikini, underarms can
-                                be safely treated. The laser hair reduction procedure is an effective procedure under
-                                the guidance of our dermatologists.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <div class="accordion-item-header">
-                        <span class="accordion-item-header-title">How many LHR sessions are needed to see
-                            results?</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-chevron-down accordion-item-header-icon">
-                            <path d="m6 9 6 6 6-6" />
-                        </svg>
-                    </div>
-                    <div class="accordion-item-description-wrapper">
-                        <div class="accordion-item-description">
-                            <hr>
-                            <p>Most of our clients will experience an immense change in thickness and growth of hair
-                                within 6 to 8 sessions. But, depending on the client’s age, hair type, and underlying
-                                hormonal condition, results may vary.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <div class="accordion-item-header">
-                        <span class="accordion-item-header-title">How to get started with the laser hair reduction
-                            treatment?</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-chevron-down accordion-item-header-icon">
-                            <path d="m6 9 6 6 6-6" />
-                        </svg>
-                    </div>
-                    <div class="accordion-item-description-wrapper">
-                        <div class="accordion-item-description">
-                            <hr>
-                            <p>You can book an online appointment with flawskin or call our office. Our customer care
-                                team will schedule an appointment with our expert dermatologist at your given
-                                convenience and preferred time.</p>
-                        </div>
-                    </div>
-                </div>
+        <div class="services-card">
+            <div class="service-box">
+                <a href="trail-session.html">Trail Session</a>
             </div>
-        </body>
+            <div class="service-box">
+                <a href="trail-session.html">Full Body</a>
+            </div>
+            <div class="service-box">
+                <a href="">Face</a>
+            </div>
+            <div class="service-box">
+                <a href="">Underarms</a>
+            </div>
+            <div class="service-box">
+                <a href="">Hands</a>
+            </div>
+            <div class="service-box">
+                <a href="">Legs</a>
+            </div>
+            <div class="service-box">
+                <a href="">Back</a>
+            </div>
+            <div class="service-box">
+                <a href="">Bikini</a>
+            </div>
+            <div class="service-box">
+                <a href="">Chest & Abdomen</a>
+            </div>
+            <div class="service-box">
+                <a href="">Buttocks</a>
+            </div>
+            <div class="service-box">
+                <a href="">Packages</a>
+            </div>
+        </div>
+
     </section>
 
-    <footer>
-        <footer>
-            <p>&copy; 2024 FLAWSKIN PRIVATE LIMITED. All Rights Reserved. <a href="privacy.html ">Privacy Policy</a> |
-                <a href="terms.html ">Terms and Conditions</a>
-            </p>
+    <!-- floating words banglore -->
+
+    <section class="floating">
+        <p>Home Service Available Across <br> <span>Banglore</span> </p>
+    </section>
+
+    <!-- why flawskin -->
+
+    <section class="why-flawskin">
+        <img src="home svg.svg" alt="">
+    </section>
+
+    <!-- FAQ -->
+
+    <div class="faq">
+
+        <h2>Frequently Asked Questions</h2>
+        <button class="accordion">is it is a safe method to treat all body areas ?</button>
+        <div class="panel">
+            <p>All areas of the body like face, hands, legs, back, chest, abdomen, bikini, underarms can be safely
+                treated. The laser hair reduction procedure is an effective procedure under the guidance of our
+                dermatologists.</p>
+        </div>
+        <button class="accordion">How many LHR sessions are needed to see results ?</button>
+        <div class="panel">
+            <p>LMost of our clients will experience an immense change in thickness and growth of hair within 6 to 8
+                sessions. But, depending on the client’s age, hair type, and underlying hormonal condition, results may
+                vary.</p>
+        </div>
+        <button class="accordion">How to get started with the laser hair reduction treatment ?</button>
+        <div class="panel">
+            <p>You can book an online appointment with flawskin or call our office. Our customer care team will schedule
+                an appointment with our expert dermatologist at your given convenience and preferred time.</p>
+        </div>
+
+    </div>
+
+
+    <!-- footer  -->
+    <div class="footer">
+        <footer class="text-white text-center text-lg-start" style="background-color: #23242a; min-width: 100%;">
+            <!-- Grid container -->
+            <div class="container p-4">
+                <!--Grid row-->
+                <div class="row mt-4">
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4">About company</h5>
+
+                        <p style="text-align: justify;">
+                            Welcome to Flawskin Private Limited! Founded in 2024, Flawskin Private Limited is dedicated
+                            to providing top-notch laser hair reduction treatments.
+
+                        </p>
+
+                        <p style="text-align: justify;">
+                            Our mission is to help you achieve smooth, hair-free skin with safe, effective, and
+                            cutting-edge technology.
+                        </p>
+
+                        <div class="mt-4">
+                            <!-- Youtubbe -->
+                            <a type="button" href="https://youtube.com/@flawskinprivatelimited?si=1RVsBTA5JbmBN9sn"
+                                class="btn btn-floating btn-warning btn-lg"><i class="fab fa-youtube"></i></a>
+                            <!-- Dribbble -->
+                            <a type="button" href="" class="btn btn-floating btn-warning btn-lg"><i
+                                    class="fab fa-whatsapp"></i></a>
+                            <!-- Twitter -->
+                            <a type="button" href="https://www.instagram.com/flawskin_?igsh=Y2l2d3cxZ2J1NXhl"
+                                class="btn btn-floating btn-warning btn-lg"><i class="fab fa-instagram"></i></a>
+                            <!-- Google + -->
+                            <a type="button" href="https://maps.app.goo.gl/TPrT9JWRdDFD2Cbx8"
+                                class="btn btn-floating btn-warning btn-lg"><i class="fas fa-map-marker-alt"></i></a>
+                            <!-- Linkedin -->
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4 pb-1">Email Us</h5>
+
+                        <div class="form-outline form-white mb-4">
+                            <input type="text" id="formControlLg" class="form-control form-control-lg">
+                            <label class="form-label" for="formControlLg" style="margin-left: 0px;">Send</label>
+                            <div class="form-notch">
+                                <div class="form-notch-leading" style="width: 9px;"></div>
+                                <div class="form-notch-middle" style="width: 48.8px;"></div>
+                                <div class="form-notch-trailing"></div>
+                            </div>
+                        </div>
+
+                        <ul class="fa-ul" style="margin-left: 1.65em;">
+                            <li class="mb-3">
+                                <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Bangalore, JP
+                                    Nagar, 7th Phase, 560078</span>
+                            </li>
+                            <li class="mb-3">
+                                <span class="fa-li"><i class="fas fa-envelope"></i></span><span
+                                    class="ms-2">contact@flawskin.com</span>
+                            </li>
+                            <li class="mb-3">
+                                <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+91
+                                    7892644030</span>
+                            </li>
+                            <!-- <li class="mb-3">
+                                <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+ 01 234 567
+                                    89</span>
+                            </li> -->
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+                        <table class="table text-center text-white">
+                            <tbody class="font-weight-normal">
+                                <tr>
+                                    <td>Mon - Thu:</td>
+                                    <td>8am - 10pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Fri - Sat:</td>
+                                    <td>8am - 10pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Sunday:</td>
+                                    <td>9am - 10pm</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2024 Copyright
+                <a class="text-white" href="" style="text-decoration: none;"> FLAWSKIN PRIVATE LIMITED. All Rights
+                    Reserved.</a>
+            </div>
+            <!-- Copyright -->
         </footer>
 
-    </footer>
-    <script src="menu.js"></script>
-    <script src="navbar.js"></script>
+    </div>
+    <!-- End of .container -->
 
 
+
+    <!-- FAQ SCRIPT -->
     <script>
-        document.querySelectorAll(".accordion-item").forEach((item) => {
-            item.querySelector(".accordion-item-header").addEventListener("click", () => {
-                item.classList.toggle("open");
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
             });
-        });
-
+        }
     </script>
-
-
-
-    <script>
-        // const scriptURL = 'https://script.google.com/macros/s/AKfycbxGeo1RSzrtERoRSGb6ng9wH0tR1nx_s2WuDZ74NnAlLML9Ra4t4hfnblmKdcqu5Gt9/exec'
-
-        // const form = document.forms['request-form']
-
-        // form.addEventListener('submit', e => {
-        //     e.preventDefault()
-        //     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        //         .then(response => alert("Thank you! your request is received successfully."))
-        //         .then(() => { window.location.reload(); })
-        //         .catch(error => console.error('Error!', error.message))
-        // });
-
-
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxGn94S2jOJtD2Ny_BJ-Flf-5nizeBqY34Ln0Nvt3NK4K8N7Z_HpLM_SGLmaoXQfDYE/exec'
-
-
-        document.addEventListener('DOMContentLoaded', () => {
-            const form = document.forms['request-form'];
-
-            form.addEventListener('submit', e => {
-                e.preventDefault();
-
-                // Validate mobile number
-                const number = form.elements['Number'].value;
-                const numberPattern = /^[6-9]\d{9}$/;
-
-                if (!number) {
-                    alert("Please enter a mobile number.");
-                    return;
-                }
-
-                if (!numberPattern.test(number)) {
-                    alert("Mobile number should start with 6, 7, 8, or 9 and be 10 digits long.");
-                    return;
-                }
-
-                // Validate date
-                const dateTime = form.elements['Date Time'].value;
-                const selectedDate = new Date(dateTime);
-                const today = new Date();
-                today.setHours(0, 0, 0, 0); // Set time to 00:00:00 for comparison
-
-                if (selectedDate < today) {
-                    alert("The date and time cannot be earlier than today's date.");
-                    return;
-                }
-
-                // Validate year (ensure it is 4 digits)
-                const year = selectedDate.getFullYear();
-                if (year.toString().length !== 4) {
-                    alert("The year must be exactly 4 digits long.");
-                    return;
-                }
-
-                // If validation passes, submit the form
-                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                    .then(response => {
-                        alert("Thank you for reaching us ! We will get back to you soon ");
-                        window.location.reload();
-                    })
-                    .catch(error => console.error('Error!', error.message));
-            });
-        });
-    </script>
-
-
-    <script>
-        const requestCallBtn = document.getElementById('request-call-btn');
-        const loginRoot = document.getElementById('login-root');
-        const closeCallBtn = document.getElementById('close-call-btn');
-
-        requestCallBtn.addEventListener('click', () => {
-            loginRoot.style.display = 'block';
-        });
-
-        closeCallBtn.addEventListener('click', () => {
-            loginRoot.style.display = 'none';
-        });
-    </script>
-
-
-    <script src="COD-POPUP.js"></script>
-
-
-
 </body>
 
 </html>
