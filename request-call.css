@@ -29,11 +29,11 @@ a {
     justify-content: center;
 }
 
-@media(max-width:768px) {
+/* @media(max-width:768px) {
     .login-root {
         position: fixed;
     }
-}
+} */
 
 .loginbackground {
     min-height: 692px;
