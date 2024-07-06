@@ -97,8 +97,8 @@ textarea {
     background-color: #fff;
     border: 2px solid #f0ad4e;
     border-radius: 10px;
-    padding: 20px;
-    max-width: 400px;
+    padding: 5cqh;
+    max-width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -110,7 +110,7 @@ textarea {
     animation: highlight-animation 2s ease-in-out infinite;
 }
 
-@keyframes highlight-animation {
+/* @keyframes highlight-animation {
     0% {
         background-color: #f0ad4e;
     }
@@ -120,4 +120,4 @@ textarea {
     100% {
         background-color: #f0ad4e;
     }
-}
+} */
