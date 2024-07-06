@@ -11,7 +11,7 @@
 //         .catch(error => console.error('Error!', error.message))
 // })
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbzrLJtxcchXVpXdnUPaD64ct7IYMi-CZIiU2fFEiR90ZMTsKp4-I5Q1IQeIgNUFDyzC/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwHIBO595mHJSLN0pgry36z2nzSEpsZnFA4eNeMUoqdUMk0blaTNlMxGx6qqc_PzlHu/exec';
 
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.forms['contact-form'];
