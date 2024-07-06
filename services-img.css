@@ -22,4 +22,14 @@
         min-width: 150px;
         border-radius: 50%;
     }
+}@media(max-width:568px) {
+    /* .store {
+        flex-direction: column;
+    } */
+
+    .content-img img {
+        height: 100px;
+        min-width: 100px;
+        border-radius: 50%;
+    }
 }
