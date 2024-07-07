@@ -64,6 +64,45 @@
         </div>
     </div>
 
+
+    <div class="total" id="reshedule">
+        <div class="hello">
+            <form method="post" action="" name="reshedule-form">
+                <span class="close2"onclick="close()">&times;</span>
+                <h4 style="color: white;">Reshedule Your Appointment</h4>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="text" name="number" placeholder="Number" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <!-- <input type="number" name="age" placeholder="Age" max="100" required> -->
+                <select name="services" id="" required>
+                    <!-- <option value="Face">Face</option>
+                <option value="Neck">Neck</option>
+                <option value="Underarms">Underarms</option>
+                <option value="Hands">Hands</option>
+                <option value="Legs">Legs</option> -->
+                    <option value="Back">Back</option>
+                    <!-- <option value="Bikini">Bikini</option>
+                <option value="Chest & Abdomen">Chest & Abdomen</option>
+                <option value="Buttocks">Buttocks</option> -->
+                </select>
+                <!-- <input type="date" name="date" id="" required> -->
+
+
+                <input type="datetime-local" name="Date Time" id="" required>
+                <textarea name="location" rows="3"
+                    placeholder="Share Your Exact Location along with the pincode and door number" required></textarea>
+
+                <!-- note -->
+                <div class="note-container">
+                    <p class="animated-note">For long-distance orders, travel allowance will be charged. The therapist
+                        will collect this amount directly.</p>
+                </div>
+
+                <input type="submit" value="Reshedule Appointment" id="appointment">
+            </form>
+        </div>
+    </div>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"> <img src="https://flawskin.com/FlawSkin-Logo.png" alt=""> </a>
@@ -106,20 +145,24 @@
                     <div class="content">
                         <h3 style="font-size: 20px;">Chest&Abdomin</h3>
                         <p>Cost: ₹2,950</p>
-                        <p>.45 Min</p>
-
-                        <p>Rating: ⭐⭐⭐⭐</p>
-                        <p>Offer: 50% off (₹500)</p>
-                        <a href="PrePostServices.html" class="pre-post">Pre & Post Care</a>
+                        <p><i class="far fa-clock"></i> 45 Min</p>
+                        <p><i class="fa fa-star" style="font-size: 16px;"> 4.5 </i> <a href=""
+                                style="font-size: 16px;">(70 Reviews)</a></p>
+                        <!-- <p>Offer: 50% off (₹500)</p> -->
+                        <a href="PrePostServices.html">Pre & Post Care</a>
                         <hr style="color: transparent;background:transparent;">
                         <br> <!-- <a href="#" class="book-now-btn">Book Now</a> -->
-                        <div class="dropdown">
-                            <button onclick="toggleDropdown()" class="dropbtn">Book Now <i class="fa fa-caret-up"></i>
-                            </button>
-                            <div id="myDropdown" class="dropdown-content">
-                                <button id="cash">Cash</button>
-                                <button onclick="CHESTABDOMINUPI()">UPI</button>
+                        <div class="order-btns">
+                            <div class="dropdown">
+                                <button onclick="toggleDropdown()" class="dropbtn">Book Now <i
+                                        class="fa fa-caret-up"></i>
+                                </button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <button id="cash">Cash</button>
+                                    <button onclick="CHESTABDOMINUPI()">UPI</button>
+                                </div>
                             </div>
+                            <button id="reshedule-btn">Reshedule</button>
                         </div>
                     </div>
                     <div class="content-img">
