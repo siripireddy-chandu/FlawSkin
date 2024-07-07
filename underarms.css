@@ -369,7 +369,7 @@ hr {
 
 .dropbtn1,.dropbtn9 {
   position: relative;
-  /* Ensure relative positioning for absolute child */
+  /* Ens ure relative positioning for absolute child */
   padding: 10px 20px;
   background-color: #007bff;
   color: #fff;
