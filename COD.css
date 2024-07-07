@@ -25,15 +25,20 @@
     padding-bottom:2em;z-index: 10000;
 }
 
-.close {
+.close1, .close2 {
     color: white;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.close1:hover,
+.close1:focus {
+    color: #aaaaaa;
+    text-decoration: none;
+    cursor: pointer;
+}.close2:hover,
+.close2:focus {
     color: #aaaaaa;
     text-decoration: none;
     cursor: pointer;
