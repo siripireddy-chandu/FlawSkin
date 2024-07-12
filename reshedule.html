@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="application.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reshedule Appointment</title>
+    <link rel="icon" href="FlawSkin-Logo.png" type="image/jpg" sizes="16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'poppins', sans-serif;
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0;
+        }
+
+
+        body {
+            background-color: skyblue;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .job-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 1000px;
+            width: 100%;
+            position: relative;
+        }
+
+        .title {
+            text-align: left;
+
+            color: #0e1c2b;
+            font-size: 25px;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
+        .job-info p {
+            margin: 5px 0;
+        }
+
+        .section-title {
+            margin-top: 20px;
+            color: #0056b3;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #f9f9f9;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        @media (max-width: 768px) {
+            .job-container {
+                padding: 15px;
+            }
+
+            .title {
+                font-size: 24px;
+            }
+
+            .section-title {
+                font-size: 20px;
+            }
+        }
+
+
+
+        .container {
+            max-width: 1000px;
+            padding: 30px;
+            border: 1px solid #00204a;
+            border-radius: 10px;
+            /* background-color: #161735; */
+
+            background: -webkit-gradient(linear, left top, left bottom, from(#002759), to(#002b64));
+            background: linear-gradient(to bottom, #002759, #002b64);
+            margin: 10px;
+            box-shadow: 1px 1px 1px 1px white;
+            margin-top: 10px;
+            position: relative;
+        }
+
+        @media(max-width:768px) {
+            .container {
+                box-shadow: none;
+                border: 1px solid #fff;
+
+            }
+        }
+
+        h4 {
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: white;
+            text-align: center;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            outline: none;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            outline: none;
+
+        }
+
+        .btns {
+            max-width: 100%;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+
+        .submit {
+            border: none;
+            background-color: orangered;
+            color: white;
+            width: 200px;
+            margin-top: 10px;
+            border-radius: 5px;
+            text-align: center;
+
+        }
+
+        .submit:hover {
+            background-color: #333333;
+            cursor: pointer;
+        }
+
+        /* 
+            @media(max-width:768px) {
+                .submit {
+                    position: relative;
+                    left: 2.5em;
+                }
+            } */
+
+        form p {
+            color: #d9534f;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            background: white;
+            padding: 4px;
+            border-radius: 5px;
+        }
+
+
+        .logo {
+            min-height: 100px;
+            max-width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo img {
+            height: 100px;
+            width: 100px;
+            align-items: center;
+        }
+
+        /* social media  */
+
+        .social-media {
+            position: absolute;
+            float: right;
+            right: 1em;
+            top: 1em;
+        }
+
+        .social-media i {
+            border-radius: 50%;
+            color: rgb(0, 0, 0);
+            padding: 5px;
+            font-size: 30px;
+            background: #ffffff;
+        }
+
+
+        .social-media a {
+            text-decoration: none;
+            margin: 1em;
+        }
+
+        .social-media i:hover {
+            color: palevioletred;
+        }
+
+        @media(max-width:768px) {
+
+            .social-media i {
+                font-size: 15px;
+                font-weight: bolder;
+            }
+
+            .social-media a {
+                margin: 0em;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form id="contact-form">
+            <h4 style="color: white;">Reshedule Your Appointment</h4>
+
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="text" name="number" placeholder="Number" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <!-- <input type="number" name="age" placeholder="Age" max="100" required> -->
+            <select name="services" id="" required>
+                <!-- <option value="Face">Face</option>
+                <option value="Neck">Neck</option>
+                <option value="Underarms">Underarms</option>
+                <option value="Hands">Hands</option>
+                <option value="Legs">Legs</option> -->
+                <option value="Back">Back</option>
+                <!-- <option value="Bikini">Bikini</option>
+                <option value="Chest & Abdomen">Chest & Abdomen</option>
+                <option value="Buttocks">Buttocks</option> -->
+            </select>
+            <!-- <input type="date" name="date" id="" required> -->
+
+
+            <input type="datetime-local" name="Date Time" id="" required>
+            <textarea name="location" rows="3"
+                placeholder="Share Your Exact Location along with the pincode and door number" required></textarea>
+
+            <!-- note -->
+            <div class="note-container">
+                <p class="animated-note">For long-distance orders, travel allowance will be charged. The therapist
+                    will collect this amount directly.</p>
+            </div>
+
+            <div class="btns">
+                <input type="submit" value="Reshedule Now" id="submit" class="submit">
+
+            </div>
+        </form>
+        <div class="btns">
+            <input type="button" value="Cancel" id="clear" class="submit">
+        </div>
+
+    </div>
+
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbys8ibSpd2VM0QHh1MAo_lViRi3KHbSFXaarHVFVA6dI56CBr3WBb_RVsToJ9nM0hKnLQ/exec'
+        //   const form = document.getElementById('contact-form')
+
+        //  form.addEventListener('submit', e => {
+        //        e.preventDefault()
+        //        const formData = new FormData(form)
+        //         fetch(scriptURL, { method: 'POST', body: formData })
+        //            .then(response => alert("Thank you! We received your application"))
+        //            .then(() => { window.location.href = "https://progmaster.in/"; })
+        //            .catch(error => console.error('Error!', error.message))
+        //    })
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.forms['contact-form'];
+
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+
+                // Validate mobile number
+                const number = form.elements['number'].value;
+                const numberPattern = /^[6-9]\d{9}$/;
+
+                if (!number) {
+                    alert("Please enter a mobile number.");
+                    return;
+                }
+
+                if (!numberPattern.test(number)) {
+                    alert("Mobile number should start with 6, 7, 8, or 9 and be 10 digits long.");
+                    return;
+                }
+
+                // Validate date
+                const dateTime = form.elements['Date Time'].value;
+                const selectedDate = new Date(dateTime);
+                const today = new Date();
+                today.setHours(0, 0, 0, 0); // Set time to 00:00:00 for comparison
+
+                if (selectedDate < today) {
+                    alert("The date and time cannot be earlier than today's date.");
+                    return;
+                }
+
+                // Validate year (ensure it is 4 digits)
+                const year = selectedDate.getFullYear();
+                if (year.toString().length !== 4) {
+                    alert("The year must be exactly 4 digits long.");
+                    return;
+                }
+
+                // If validation passes, submit the form
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => {
+                        alert("Thank you! Your Appointment Resheduled.");
+                        window.location.href = "https://flawskin.com/";
+                    })
+                    .catch(error => console.error('Error!', error.message));
+            });
+        });
+
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const backButton = document.getElementById('clear');
+
+            backButton.addEventListener('click', function () {
+                window.location.href = 'https://flawskin.com/';
+            });
+        });
+    </script>
+
+</body>
+
+</html>
