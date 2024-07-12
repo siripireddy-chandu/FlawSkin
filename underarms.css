@@ -3,11 +3,9 @@
   border: 0;
   box-sizing: 0;
 }
-
-::-webkit-scrollbar {
+::-webkit-scrollbar{
   width: 0px;
 }
-
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
@@ -369,10 +367,7 @@ hr {
 
 
 
-.dropbtn1,
-.dropbtn9,
-.reshedule,
-.dropdown {
+.dropbtn1,.dropbtn9, .reshedule {
   position: relative;
   /* Ens ure relative positioning for absolute child */
   padding: 10px 20px;
@@ -408,6 +403,7 @@ hr {
   font-weight: 700;
   letter-spacing: 1.2px;
 }
+
 
 .store {
   display: flex;
