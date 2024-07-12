@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>afjfdafdsfjsfsf Laser Hair Removal</title>
+    <title>Bikini Laser Hair Removal</title>
     <link rel="stylesheet" href="underarms.css">
     <link rel="stylesheet" href="services-img.css">
     <link rel="stylesheet" href="navbar.css">
@@ -62,44 +62,6 @@
     </div>
 
 
-    <div class="total" id="reshedule">
-        <div class="hello">
-            <form method="post" action="" name="reshedule-form">
-                <span class="close2"onclick="close()">&times;</span>
-                <h4 style="color: white;">Reshedule Your Appointment</h4>
-                <input type="text" name="name" placeholder="Name" required>
-                <input type="text" name="number" placeholder="Number" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <!-- <input type="number" name="age" placeholder="Age" max="100" required> -->
-                <select name="services" id="" required>
-                    <!-- <option value="Face">Face</option>
-                <option value="Neck">Neck</option>
-                <option value="Underarms">Underarms</option>
-                <option value="Hands">Hands</option>
-                <option value="Legs">Legs</option> -->
-                    <option value="Back">Back</option>
-                    <!-- <option value="Bikini">Bikini</option>
-                <option value="Chest & Abdomen">Chest & Abdomen</option>
-                <option value="Buttocks">Buttocks</option> -->
-                </select>
-                <!-- <input type="date" name="date" id="" required> -->
-
-
-                <input type="datetime-local" name="Date Time" id="" required>
-                <textarea name="location" rows="3"
-                    placeholder="Share Your Exact Location along with the pincode and door number" required></textarea>
-
-                <!-- note -->
-                <div class="note-container">
-                    <p class="animated-note">For long-distance orders, travel allowance will be charged. The therapist
-                        will collect this amount directly.</p>
-                </div>
-
-                <input type="submit" value="Reshedule Appointment" id="appointment">
-            </form>
-        </div>
-    </div>
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"> <img src="https://flawskin.com/FlawSkin-Logo.png" alt=""> </a>
@@ -142,12 +104,13 @@
                         <h3 style="font-size: 20px;">Bikini</h3>
                         <p>Cost: ₹2,900</p>
                         <p><i class="far fa-clock"></i> 45 Min</p>
-                        <p><i class="fa fa-star" style="font-size: 16px;"> 5.0 </i> <a href="https://www.google.com/search?hl=en-IN&gl=in&q=Flawskin+pvt+Ltd,+2,+Rathnamma+Nilayam+3rd+cross,+9th+Main+Rd,+ramappalayout,+Puttenahalli,+Phase+7,+J.+P.+Nagar,+Bengaluru,+Karnataka+560078&ludocid=13967352830529973394&lsig=AB86z5WMNV4S1Zguvz3Qogsomofj&ibp=gwp%3B0,7&authuser=2&hl=en&gl=IN#lkt=LocalPoiReviews&lpg=cid:CgIgAQ%3D%3D"
+                        <p><i class="fa fa-star" style="font-size: 16px;"> 5.0 </i> <a
+                                href="https://www.google.com/search?hl=en-IN&gl=in&q=Flawskin+pvt+Ltd,+2,+Rathnamma+Nilayam+3rd+cross,+9th+Main+Rd,+ramappalayout,+Puttenahalli,+Phase+7,+J.+P.+Nagar,+Bengaluru,+Karnataka+560078&ludocid=13967352830529973394&lsig=AB86z5WMNV4S1Zguvz3Qogsomofj&ibp=gwp%3B0,7&authuser=2&hl=en&gl=IN#lkt=LocalPoiReviews&lpg=cid:CgIgAQ%3D%3D"
                                 style="font-size: 16px;">(70 Reviews)</a></p>
                         <!-- <p>Offer: 50% off (₹500)</p> -->
                         <a href="PrePostServices.html">Pre & Post Care</a>
-                       
-                        
+
+
                         <div class="order-btns">
                             <div class="dropdown">
                                 <button onclick="toggleDropdown()" class="dropbtn">Book Now <i
@@ -158,7 +121,7 @@
                                     <button onclick="BIKINIUPI()">UPI</button>
                                 </div>
                             </div>
-                            <button id="reshedule-btn">Reshedule</button>
+                            <button class="reshedule" id="reshedule-btn">Reshedule</button>
                         </div>
 
                     </div>
@@ -194,6 +157,13 @@
     <script src="COD-POPUP.js"></script>
     <script>
         function BIKINIUPI() { window.location.href = "https://rzp.io/l/GEhRKL9N" }  
+    </script>
+
+    <script>
+        document.getElementById("reshedule-btn").addEventListener("click", function () {
+            window.location.href = "reshedule.html"; // Replace 'newpage.html' with your target page
+        });
+
     </script>
 </body>
 
