@@ -156,7 +156,7 @@ document.addEventListener("click", function (event) {
 });
 
 function toggleDropdown8() {
-  var dropdown = document.getElementById("myDropdown7");
+  var dropdown = document.getElementById("myDropdown8");
   if (dropdown.style.display === "none" || dropdown.style.display === "") {
     dropdown.style.display = "block";
   } else {
@@ -167,6 +167,23 @@ function toggleDropdown8() {
 document.addEventListener("click", function (event) {
   var dropdown = document.getElementById("myDropdown8");
   var dropbtn = document.querySelector(".dropbtn8");
+  if (!dropbtn.contains(event.target) && !dropdown.contains(event.target)) {
+    dropdown.style.display = "none";
+  }
+});
+
+function toggleDropdown9() {
+  var dropdown = document.getElementById("myDropdown9");
+  if (dropdown.style.display === "none" || dropdown.style.display === "") {
+    dropdown.style.display = "block";
+  } else {
+    dropdown.style.display = "none";
+  }
+}
+
+document.addEventListener("click", function (event) {
+  var dropdown = document.getElementById("myDropdown9");
+  var dropbtn = document.querySelector(".dropbtn9");
   if (!dropbtn.contains(event.target) && !dropdown.contains(event.target)) {
     dropdown.style.display = "none";
   }
