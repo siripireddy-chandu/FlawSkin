@@ -367,7 +367,7 @@ hr {
 
 
 
-.dropbtn1,.dropbtn9 {
+.dropbtn1,.dropbtn9, .reshedule {
   position: relative;
   /* Ens ure relative positioning for absolute child */
   padding: 10px 20px;
