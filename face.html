@@ -40,61 +40,22 @@
     <div class="total" id="myModal">
         <div class="hello">
             <form method="post" action="" name="contact-form">
-                <span class="close">&times;</span>
+                <span class="close1">&times;</span>
                 <h4 style="color: white;">Cash On Devlivery</h4>
-                <input type="text" name="name" placeholder="Name" required>
-                <input type="text" name="number" placeholder="Number" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="number" name="age" placeholder="Age" max="100" required>
-
-                <select name="services" id="" required>
-                    <option value="Upper Lip">Upper Lip</option>
-                    <option value="Chin">Chin</option>
-                    <option value="Upper Neck">Upper Neck</option>
-                    <option value="Side Lock">Side Lock</option>
-                    <option value="Cheeks">Cheeks</option>
-                    <option value="Full Face">Full Face</option>
-                    <!-- <option value="Bikini">Bikini</option>
-                    <option value="Chest & Abdomen">Chest & Abdomen</option>
-                    <option value="Buttocks">Buttocks</option> -->
-                </select>
-                <!-- <input type="date" name="date" id="" required> -->
-                <input type="datetime-local" name="Date Time" id="" required>
-
-
-                <textarea name="location" rows="3"
-                    placeholder="Share Your Exact Location along with the pincode and door number" required></textarea>
-
-                <!-- note -->
-                <div class="note-container">
-                    <p class="animated-note">For long-distance orders, travel allowance will be charged. The therapist
-                        will collect this amount directly.</p>
-                </div>
-                <input type="submit" value="Order Confirm" id="submit">
-            </form>
-        </div>
-    </div>
-
-
-    <div class="total" id="reshedule">
-        <div class="hello">
-            <form method="post" action="" name="reshedule-form">
-                <span class="close2" onclick="close()">&times;</span>
-                <h4 style="color: white;">Reshedule Your Appointment</h4>
                 <input type="text" name="name" placeholder="Name" required>
                 <input type="text" name="number" placeholder="Number" required>
                 <input type="email" name="email" placeholder="Email" required>
                 <!-- <input type="number" name="age" placeholder="Age" max="100" required> -->
                 <select name="services" id="" required>
                     <!-- <option value="Face">Face</option>
-                <option value="Neck">Neck</option>
-                <option value="Underarms">Underarms</option>
-                <option value="Hands">Hands</option>
-                <option value="Legs">Legs</option> -->
+                    <option value="Neck">Neck</option>
+                    <option value="Underarms">Underarms</option>
+                    <option value="Hands">Hands</option>
+                    <option value="Legs">Legs</option> -->
                     <option value="Back">Back</option>
                     <!-- <option value="Bikini">Bikini</option>
-                <option value="Chest & Abdomen">Chest & Abdomen</option>
-                <option value="Buttocks">Buttocks</option> -->
+                    <option value="Chest & Abdomen">Chest & Abdomen</option>
+                    <option value="Buttocks">Buttocks</option> -->
                 </select>
                 <!-- <input type="date" name="date" id="" required> -->
 
@@ -109,10 +70,11 @@
                         will collect this amount directly.</p>
                 </div>
 
-                <input type="submit" value="Reshedule Appointment" id="appointment">
+                <input type="submit" value="Confirm Order" id="submit">
             </form>
         </div>
     </div>
+
 
     <!-- menu -->
 
@@ -356,7 +318,6 @@
 
     </main>
 
-    <footer></footer>
 
     <script src="navbar.js"></script>
     <script src="BuyButtonDropdown.js"></script>
@@ -370,14 +331,6 @@
         function SIDELOCKUPI() { window.location.href = "https://rzp.io/l/jqMLnzzJP" }
         function CHEEKSUPI() { window.location.href = "https://rzp.io/l/jqMLnzzJP" }
         function FULLFACEUPI() { window.location.href = "https://rzp.io/l/S947D6B" }
-
-
-
-
-        var btn9 = document.getElementById("reshedule-btn");
-        btn9.onclick = function () {
-            shedule.style.display = "flex";
-        }
     </script>
 
     <script>
@@ -403,30 +356,29 @@
     </script>
 
     <script>
-        // UNDERARRMS PAGE
-        var btn1 = document.getElementById("cash1");
-        var btn2 = document.getElementById("cash2");
-        var btn3 = document.getElementById("cash3");
-        var btn4 = document.getElementById("cash4");
-        var btn5 = document.getElementById("cash5");
-        var btn6 = document.getElementById("cash6");
+        var btnn = document.getElementById("cash1");
+        var btnnn= document.getElementById("cash2");
+        var btnnnn = document.getElementById("cash3");
+        var btnnnnn = document.getElementById("cash4");
+        var btnnnnnn = document.getElementById("cash5");
+        var btnnnnnnn = document.getElementById("cash6");
 
-        btn1.onclick = function () {
+        btnn.onclick = function () {
             modal.style.display = "flex";
         }
-        btn2.onclick = function () {
+        btnnn.onclick = function () {
             modal.style.display = "flex";
         }
-        btn3.onclick = function () {
+        btnnnn.onclick = function () {
             modal.style.display = "flex";
         }
-        btn4.onclick = function () {
+        btnnnnn.onclick = function () {
             modal.style.display = "flex";
         }
-        btn5.onclick = function () {
+        btnnnnnn.onclick = function () {
             modal.style.display = "flex";
         }
-        btn6.onclick = function () {
+        btnnnnnnn.onclick = function () {
             modal.style.display = "flex";
         }
 
