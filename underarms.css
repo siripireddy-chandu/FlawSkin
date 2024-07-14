@@ -3,9 +3,11 @@
   border: 0;
   box-sizing: 0;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
   width: 0px;
 }
+
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
@@ -367,7 +369,9 @@ hr {
 
 
 
-.dropbtn1,.dropbtn9, .reshedule {
+.dropbtn1,
+.dropbtn9,
+.reshedule {
   position: relative;
   /* Ens ure relative positioning for absolute child */
   padding: 10px 20px;
@@ -409,4 +413,16 @@ hr {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.order-btns {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 2em;
+}
+
+@media(max-width:768px) {
+  .order-btns {
+    gap: 1em;
+  }
 }
