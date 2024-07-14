@@ -10,9 +10,8 @@
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="COD.css">
     <link rel="stylesheet" href="style.css">
-
-
     <link rel="icon" type="image/x-icon" href="flawskinlogo.png">
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
@@ -30,42 +29,40 @@
     <div class="total" id="myModal">
         <div class="hello">
             <form method="post" action="" name="contact-form">
-                <span class="close">&times;</span>
+                <span class="close1">&times;</span>
                 <h4 style="color: white;">Cash On Devlivery</h4>
                 <input type="text" name="name" placeholder="Name" required>
                 <input type="text" name="number" placeholder="Number" required>
                 <input type="email" name="email" placeholder="Email" required>
-                <input type="number" name="age" placeholder="Age" max="100" required>
-
+                <!-- <input type="number" name="age" placeholder="Age" max="100" required> -->
                 <select name="services" id="" required>
                     <!-- <option value="Face">Face</option>
                     <option value="Neck">Neck</option>
                     <option value="Underarms">Underarms</option>
-                    <option value="Hands">Hands</option> -->
-                    <option value="Legs">Legs</option>
-                    <!-- <option value="Back">Back</option>
-                    <option value="Bikini">Bikini</option>
+                    <option value="Hands">Hands</option>
+                    <option value="Legs">Legs</option> -->
+                    <option value="Hands">Legs</option>
+                    <!-- <option value="Bikini">Bikini</option>
                     <option value="Chest & Abdomen">Chest & Abdomen</option>
                     <option value="Buttocks">Buttocks</option> -->
                 </select>
                 <!-- <input type="date" name="date" id="" required> -->
+
+
                 <input type="datetime-local" name="Date Time" id="" required>
-
-
                 <textarea name="location" rows="3"
                     placeholder="Share Your Exact Location along with the pincode and door number" required></textarea>
+
                 <!-- note -->
                 <!-- <div class="note-container">
                     <p class="animated-note">For long-distance orders, travel allowance will be charged. The therapist
                         will collect this amount directly.</p>
                 </div> -->
+
                 <input type="submit" value="Confirm Order" id="submit">
             </form>
         </div>
     </div>
-
-
-   
 
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -103,31 +100,30 @@
 
         <div class="service-areas">
             <h2 style="color: #0091ffc4;font-size: 20px;">Areas</h2>
-
             <div class="service-area">
                 <div class="store">
                     <div class="content">
                         <h3 style="font-size: 20px;">Legs</h3>
-                        <p>Cost: <del>₹5,599</del>  ₹4,499</p> 
+                        <p>Cost: <del>₹5,599</del> ₹4,499</p>
                         <p><i class="far fa-clock"></i> 1 Hr</p>
-                        <p><i class="fa fa-star" style="font-size: 16px;"> 5.0 </i> <a href="https://www.google.com/search?hl=en-IN&gl=in&q=Flawskin+pvt+Ltd,+2,+Rathnamma+Nilayam+3rd+cross,+9th+Main+Rd,+ramappalayout,+Puttenahalli,+Phase+7,+J.+P.+Nagar,+Bengaluru,+Karnataka+560078&ludocid=13967352830529973394&lsig=AB86z5WMNV4S1Zguvz3Qogsomofj&ibp=gwp%3B0,7&authuser=2&hl=en&gl=IN#lkt=LocalPoiReviews&lpg=cid:CgIgAQ%3D%3D"
+                        <p><i class="fa fa-star" style="font-size: 16px;"> 5.0 </i> <a
+                                href="https://www.google.com/search?hl=en-IN&gl=in&q=Flawskin+pvt+Ltd,+2,+Rathnamma+Nilayam+3rd+cross,+9th+Main+Rd,+ramappalayout,+Puttenahalli,+Phase+7,+J.+P.+Nagar,+Bengaluru,+Karnataka+560078&ludocid=13967352830529973394&lsig=AB86z5WMNV4S1Zguvz3Qogsomofj&ibp=gwp%3B0,7&authuser=2&hl=en&gl=IN#lkt=LocalPoiReviews&lpg=cid:CgIgAQ%3D%3D"
                                 style="font-size: 16px;">(76 Reviews)</a></p>
                         <!-- <p>Offer: 50% off (₹500)</p> -->
                         <a href="PrePostServices.html">Pre & Post Care</a>
-                        
-                        
                         <div class="order-btns">
                             <div class="dropdown">
-                                <button onclick="toggleDropdown()" class="dropbtn">Book Now <i
+                                <button onclick="toggleDropdown1()" class="dropbtn1">Book Now <i
                                         class="fa fa-caret-up"></i>
                                 </button>
-                                <div id="myDropdown" class="dropdown-content">
-                                    <button id="cash">Cash</button>
-                                    <button onclick="BACKUPI()">UPI</button>
+                                <div id="myDropdown1" class="dropdown-content">
+                                    <button id="cash1">Cash</button>
+                                    <button onclick="HANDSUPI()">UPI</button>
                                 </div>
                             </div>
                             <button class="reshedule" id="reshedule-btn">Reshedule</button>
                         </div>
+
                     </div>
                     <div class="content-img">
                         <img src="LEGS.png" alt="">
@@ -141,7 +137,7 @@
                     <!-- Cost and session details will be populated here -->
                 </ul>
             </div>
-
+        </div>
     </main>
 
     <script>
@@ -160,7 +156,7 @@
     <script src="GoogleScript.js"></script>
     <script src="COD-POPUP.js"></script>
     <script>
-        function LEGSSUPI() { window.location.href = "https://rzp.io/l/0VJMhu0gys" }  
+        function HANDSUPI() { window.location.href = "https://rzp.io/l/fiwunteN" } 
     </script>
 
     <script>

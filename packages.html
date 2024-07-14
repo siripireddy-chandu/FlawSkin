@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Packages Laser Hair Removal</title>
+    <link rel="stylesheet" href="underarms.css">
     <link rel="stylesheet" href="services-img.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="COD.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="underarms.css">
-
     <link rel="icon" type="image/x-icon" href="flawskinlogo.png">
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -28,13 +29,12 @@
     <div class="total" id="myModal">
         <div class="hello">
             <form method="post" action="" name="contact-form">
-                <span class="close">&times;</span>
+                <span class="close1">&times;</span>
                 <h4 style="color: white;">Cash On Devlivery</h4>
                 <input type="text" name="name" placeholder="Name" required>
                 <input type="text" name="number" placeholder="Number" required>
                 <input type="email" name="email" placeholder="Email" required>
-                <input type="number" name="age" placeholder="Age" max="100" required>
-
+                <!-- <input type="number" name="age" placeholder="Age" max="100" required> -->
                 <select name="services" id="" required>
                     <option value="Full Legs + Full Hands + Underarms">Full Legs + Full Hands + Underarms</option>
                     <option value="Full Face + Underarms">Full Face + Underarms</option>
@@ -50,18 +50,24 @@
                     <!-- <option value="Chest & Abdomen">Chest & Abdomen</option> -->
                     <!-- <option value="Buttocks">Buttocks</option> -->
                 </select>
-                <input type="date" name="date" id="" required>
+                <!-- <input type="date" name="date" id="" required> -->
+
+
+                <input type="datetime-local" name="Date Time" id="" required>
                 <textarea name="location" rows="3"
                     placeholder="Share Your Exact Location along with the pincode and door number" required></textarea>
+
                 <!-- note -->
                 <!-- <div class="note-container">
                     <p class="animated-note">For long-distance orders, travel allowance will be charged. The therapist
                         will collect this amount directly.</p>
                 </div> -->
+
                 <input type="submit" value="Confirm Order" id="submit">
             </form>
         </div>
     </div>
+
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
@@ -96,226 +102,211 @@
         <h1 style="color: #0091ffc4;font-size: 20px;">Combo packages</h1>
         <p>Get smooth, hair-free skin with our safe and effective laser hair removal treatments.</p>
 
+
         <div class="service-areas">
             <h2 style="color: #0091ffc4;font-size: 20px;">Areas</h2>
-
             <div class="service-area">
                 <div class="store">
                     <div class="content">
                         <h3 style="font-size: 20px;">Full Legs + Hands + Underarms</h3>
-                        <p>Cost: <del>₹8,298</del>  ₹6,969</p> 
+                        <p>Cost: <del>₹8,298</del> ₹6,969</p>
                         <p><i class="far fa-clock"></i> 2 Hr</p>
-                        <p><i class="fa fa-star" style="font-size: 16px;"> 5.0 </i> <a href="https://www.google.com/search?hl=en-IN&gl=in&q=Flawskin+pvt+Ltd,+2,+Rathnamma+Nilayam+3rd+cross,+9th+Main+Rd,+ramappalayout,+Puttenahalli,+Phase+7,+J.+P.+Nagar,+Bengaluru,+Karnataka+560078&ludocid=13967352830529973394&lsig=AB86z5WMNV4S1Zguvz3Qogsomofj&ibp=gwp%3B0,7&authuser=2&hl=en&gl=IN#lkt=LocalPoiReviews&lpg=cid:CgIgAQ%3D%3D"
+                        <p><i class="fa fa-star" style="font-size: 16px;"> 5.0 </i> <a
+                                href="https://www.google.com/search?hl=en-IN&gl=in&q=Flawskin+pvt+Ltd,+2,+Rathnamma+Nilayam+3rd+cross,+9th+Main+Rd,+ramappalayout,+Puttenahalli,+Phase+7,+J.+P.+Nagar,+Bengaluru,+Karnataka+560078&ludocid=13967352830529973394&lsig=AB86z5WMNV4S1Zguvz3Qogsomofj&ibp=gwp%3B0,7&authuser=2&hl=en&gl=IN#lkt=LocalPoiReviews&lpg=cid:CgIgAQ%3D%3D"
                                 style="font-size: 16px;">(76 Reviews)</a></p>
                         <!-- <p>Offer: 50% off (₹500)</p> -->
                         <a href="PrePostServices.html">Pre & Post Care</a>
-                        
-                        <br> <!-- <a href="#" class="book-now-btn">Book Now</a> -->
-                        <div class="dropdown">
-                            <button onclick="toggleDropdown()" class="dropbtn">Book Now <i class="fa fa-caret-up"></i>
-                            </button>
-                            <div id="myDropdown" class="dropdown-content">
-                                <button id="cash1">Cash</button>
-                                <button onclick="UPI1()">UPI</button>
+                        <div class="order-btns">
+                            <div class="dropdown">
+                                <button onclick="toggleDropdown1()" class="dropbtn1">Book Now <i
+                                        class="fa fa-caret-up"></i>
+                                </button>
+                                <div id="myDropdown1" class="dropdown-content">
+                                    <button id="cash1">Cash</button>
+                                    <button onclick="UPI1()">UPI</button>
+                                </div>
                             </div>
+                            <button class="reshedule" id="reshedule-btn1">Reshedule</button>
                         </div>
-                        <button class="reshedule" id="reshedule-btn1">Reshedule</button>
 
                     </div>
-                    <!-- <div class="content-img">
-                        <img src="UPPPER LIP.png" alt="">
-                    </div> -->
+
                 </div>
             </div>
+
+            <!-- second card -->
+
             <div class="service-area">
                 <div class="store">
                     <div class="content">
                         <h3 style="font-size: 20px;">Full Face + Underarms</h3>
-
-                        <p>Cost: <del>₹2,800</del>  ₹3,499</p> 
+                        <p>Cost: <del>₹2,800</del> ₹3,499</p>
                         <p><i class="far fa-clock"></i> 1 Hr</p>
-                        <p><i class="fa fa-star" style="font-size: 16px;"> 5.0 </i> <a href="https://www.google.com/search?hl=en-IN&gl=in&q=Flawskin+pvt+Ltd,+2,+Rathnamma+Nilayam+3rd+cross,+9th+Main+Rd,+ramappalayout,+Puttenahalli,+Phase+7,+J.+P.+Nagar,+Bengaluru,+Karnataka+560078&ludocid=13967352830529973394&lsig=AB86z5WMNV4S1Zguvz3Qogsomofj&ibp=gwp%3B0,7&authuser=2&hl=en&gl=IN#lkt=LocalPoiReviews&lpg=cid:CgIgAQ%3D%3D"
+                        <p><i class="fa fa-star" style="font-size: 16px;"> 5.0 </i> <a
+                                href="https://www.google.com/search?hl=en-IN&gl=in&q=Flawskin+pvt+Ltd,+2,+Rathnamma+Nilayam+3rd+cross,+9th+Main+Rd,+ramappalayout,+Puttenahalli,+Phase+7,+J.+P.+Nagar,+Bengaluru,+Karnataka+560078&ludocid=13967352830529973394&lsig=AB86z5WMNV4S1Zguvz3Qogsomofj&ibp=gwp%3B0,7&authuser=2&hl=en&gl=IN#lkt=LocalPoiReviews&lpg=cid:CgIgAQ%3D%3D"
                                 style="font-size: 16px;">(76 Reviews)</a></p>
                         <!-- <p>Offer: 50% off (₹500)</p> -->
                         <a href="PrePostServices.html">Pre & Post Care</a>
-                       
-                        <br> <!-- <a href="#" class="book-now-btn">Book Now</a> -->
-                        <div class="dropdown">
-                            <button onclick="toggleDropdown1()" class="dropbtn">Book Now <i class="fa fa-caret-up"></i>
-                            </button>
-                            <div id="myDropdown1" class="dropdown-content">
-                                <button id="cash2">Cash</button>
-                                <button onclick="UPI2()">UPI</button>
+                        <div class="order-btns">
+                            <div class="dropdown">
+                                <button onclick="toggleDropdown2()" class="dropbtn2">Book Now <i
+                                        class="fa fa-caret-up"></i>
+                                </button>
+                                <div id="myDropdown2" class="dropdown-content">
+                                    <button id="cash2">Cash</button>
+                                    <button onclick="UPI2()">UPI</button>
+                                </div>
                             </div>
+                            <button class="reshedule" id="reshedule-btn2">Reshedule</button>
                         </div>
-                        <button class="reshedule" id="reshedule-btn2">Reshedule</button>
 
                     </div>
-                    <!-- <div class="content-img">
-                        <img src="UPPPER LIP.png" alt="">
-                    </div> -->
+
                 </div>
             </div>
+
+            <!-- third card -->
+
+
             <div class="service-area">
                 <div class="store">
                     <div class="content">
                         <h3 style="font-size: 20px;">Bikini + Buttocks</h3>
-
-                        <p>Cost: <del>₹5,998</del>  ₹4,499</p> 
+                        <p>Cost: <del>₹5,998</del> ₹4,499</p>
                         <p><i class="far fa-clock"></i> 1 Hr 30 Min</p>
-                        <p><i class="fa fa-star" style="font-size: 16px;"> 5.0 </i> <a href="https://www.google.com/search?hl=en-IN&gl=in&q=Flawskin+pvt+Ltd,+2,+Rathnamma+Nilayam+3rd+cross,+9th+Main+Rd,+ramappalayout,+Puttenahalli,+Phase+7,+J.+P.+Nagar,+Bengaluru,+Karnataka+560078&ludocid=13967352830529973394&lsig=AB86z5WMNV4S1Zguvz3Qogsomofj&ibp=gwp%3B0,7&authuser=2&hl=en&gl=IN#lkt=LocalPoiReviews&lpg=cid:CgIgAQ%3D%3D"
+                        <p><i class="fa fa-star" style="font-size: 16px;"> 5.0 </i> <a
+                                href="https://www.google.com/search?hl=en-IN&gl=in&q=Flawskin+pvt+Ltd,+2,+Rathnamma+Nilayam+3rd+cross,+9th+Main+Rd,+ramappalayout,+Puttenahalli,+Phase+7,+J.+P.+Nagar,+Bengaluru,+Karnataka+560078&ludocid=13967352830529973394&lsig=AB86z5WMNV4S1Zguvz3Qogsomofj&ibp=gwp%3B0,7&authuser=2&hl=en&gl=IN#lkt=LocalPoiReviews&lpg=cid:CgIgAQ%3D%3D"
                                 style="font-size: 16px;">(76 Reviews)</a></p>
                         <!-- <p>Offer: 50% off (₹500)</p> -->
                         <a href="PrePostServices.html">Pre & Post Care</a>
-                       
-                        <br> <!-- <a href="#" class="book-now-btn">Book Now</a> -->
-                        <div class="dropdown">
-                            <button onclick="toggleDropdown2()" class="dropbtn">Book Now <i class="fa fa-caret-up"></i>
-                            </button>
-                            <div id="myDropdown2" class="dropdown-content">
-                                <button id="cash3">Cash</button>
-                                <button onclick="UPI3()">UPI</button>
+                        <div class="order-btns">
+                            <div class="dropdown">
+                                <button onclick="toggleDropdown3()" class="dropbtn3">Book Now <i
+                                        class="fa fa-caret-up"></i>
+                                </button>
+                                <div id="myDropdown3" class="dropdown-content">
+                                    <button id="cash3">Cash</button>
+                                    <button onclick="UPI3()">UPI</button>
+                                </div>
                             </div>
+                            <button class="reshedule" id="reshedule-btn3">Reshedule</button>
                         </div>
-                        <button class="reshedule" id="reshedule-btn3">Reshedule</button>
 
                     </div>
-                    <!-- <div class="content-img">
-                        <img src="UPPPER LIP.png" alt="">
-                    </div> -->
+
                 </div>
             </div>
+
+            <!-- fourth card -->
             <div class="service-area">
                 <div class="store">
                     <div class="content">
                         <h3 style="font-size: 20px;">Full Face + Bikini</h3>
-
-                        <p>Cost: <del>₹5,799</del>  ₹4,499</p> 
+                        <p>Cost: <del>₹5,799</del> ₹4,499</p>
                         <p><i class="far fa-clock"></i> 1 Hr 30 Min</p>
-                        <p><i class="fa fa-star" style="font-size: 16px;"> 5.0 </i> <a href="https://www.google.com/search?hl=en-IN&gl=in&q=Flawskin+pvt+Ltd,+2,+Rathnamma+Nilayam+3rd+cross,+9th+Main+Rd,+ramappalayout,+Puttenahalli,+Phase+7,+J.+P.+Nagar,+Bengaluru,+Karnataka+560078&ludocid=13967352830529973394&lsig=AB86z5WMNV4S1Zguvz3Qogsomofj&ibp=gwp%3B0,7&authuser=2&hl=en&gl=IN#lkt=LocalPoiReviews&lpg=cid:CgIgAQ%3D%3D"
+                        <p><i class="fa fa-star" style="font-size: 16px;"> 5.0 </i> <a
+                                href="https://www.google.com/search?hl=en-IN&gl=in&q=Flawskin+pvt+Ltd,+2,+Rathnamma+Nilayam+3rd+cross,+9th+Main+Rd,+ramappalayout,+Puttenahalli,+Phase+7,+J.+P.+Nagar,+Bengaluru,+Karnataka+560078&ludocid=13967352830529973394&lsig=AB86z5WMNV4S1Zguvz3Qogsomofj&ibp=gwp%3B0,7&authuser=2&hl=en&gl=IN#lkt=LocalPoiReviews&lpg=cid:CgIgAQ%3D%3D"
                                 style="font-size: 16px;">(76 Reviews)</a></p>
                         <!-- <p>Offer: 50% off (₹500)</p> -->
                         <a href="PrePostServices.html">Pre & Post Care</a>
-                        
-                        <br> <!-- <a href="#" class="book-now-btn">Book Now</a> -->
-                        <div class="dropdown">
-                            <button onclick="toggleDropdown3()" class="dropbtn">Book Now <i class="fa fa-caret-up"></i>
-                            </button>
-                            <div id="myDropdown3" class="dropdown-content">
-                                <button id="cash4">Cash</button>
-                                <button onclick="UPI4()">UPI</button>
+                        <div class="order-btns">
+                            <div class="dropdown">
+                                <button onclick="toggleDropdown4()" class="dropbtn4">Book Now <i
+                                        class="fa fa-caret-up"></i>
+                                </button>
+                                <div id="myDropdown4" class="dropdown-content">
+                                    <button id="cash4">Cash</button>
+                                    <button onclick="UPI4()">UPI</button>
+                                </div>
                             </div>
+                            <button class="reshedule" id="reshedule-btn4">Reshedule</button>
                         </div>
-                        <button class="reshedule" id="reshedule-btn4">Reshedule</button>
 
                     </div>
-                    <!-- <div class="content-img">
-                        <img src="UPPPER LIP.png" alt="">
-                    </div> -->
+
                 </div>
             </div>
+            <!-- fifth card -->
             <div class="service-area">
                 <div class="store">
                     <div class="content">
                         <h3 style="font-size: 20px;">Full Front + Full Back</h3>
-
-                        <p>Cost: <del>₹5,999</del>  ₹4,499</p> 
+                        <p>Cost: <del>₹5,999</del> ₹4,499</p>
                         <p><i class="far fa-clock"></i> 1 Hr 30 Min</p>
-                        <p><i class="fa fa-star" style="font-size: 16px;"> 5.0 </i> <a href="https://www.google.com/search?hl=en-IN&gl=in&q=Flawskin+pvt+Ltd,+2,+Rathnamma+Nilayam+3rd+cross,+9th+Main+Rd,+ramappalayout,+Puttenahalli,+Phase+7,+J.+P.+Nagar,+Bengaluru,+Karnataka+560078&ludocid=13967352830529973394&lsig=AB86z5WMNV4S1Zguvz3Qogsomofj&ibp=gwp%3B0,7&authuser=2&hl=en&gl=IN#lkt=LocalPoiReviews&lpg=cid:CgIgAQ%3D%3D"
+                        <p><i class="fa fa-star" style="font-size: 16px;"> 5.0 </i> <a
+                                href="https://www.google.com/search?hl=en-IN&gl=in&q=Flawskin+pvt+Ltd,+2,+Rathnamma+Nilayam+3rd+cross,+9th+Main+Rd,+ramappalayout,+Puttenahalli,+Phase+7,+J.+P.+Nagar,+Bengaluru,+Karnataka+560078&ludocid=13967352830529973394&lsig=AB86z5WMNV4S1Zguvz3Qogsomofj&ibp=gwp%3B0,7&authuser=2&hl=en&gl=IN#lkt=LocalPoiReviews&lpg=cid:CgIgAQ%3D%3D"
                                 style="font-size: 16px;">(76 Reviews)</a></p>
                         <!-- <p>Offer: 50% off (₹500)</p> -->
                         <a href="PrePostServices.html">Pre & Post Care</a>
-                       
-                        <br> <!-- <a href="#" class="book-now-btn">Book Now</a> -->
-                        <div class="dropdown">
-                            <button onclick="toggleDropdown4()" class="dropbtn">Book Now <i class="fa fa-caret-up"></i>
-                            </button>
-                            <div id="myDropdown4" class="dropdown-content">
-                                <button id="cash5">Cash</button>
-                                <button onclick="UPI5()">UPI</button>
+                        <div class="order-btns">
+                            <div class="dropdown">
+                                <button onclick="toggleDropdown5()" class="dropbtn5">Book Now <i
+                                        class="fa fa-caret-up"></i>
+                                </button>
+                                <div id="myDropdown5" class="dropdown-content">
+                                    <button id="cash5">Cash</button>
+                                    <button onclick="UPI5()">UPI</button>
+                                </div>
                             </div>
+                            <button class="reshedule" id="reshedule-btn5">Reshedule</button>
                         </div>
-                        <button class="reshedule" id="reshedule-btn5">Reshedule</button>
 
                     </div>
-                    <!-- <div class="content-img">
-                        <img src="UPPPER LIP.png" alt="">
-                    </div> -->
+
                 </div>
             </div>
+            <!-- sixth card -->
             <div class="service-area">
                 <div class="store">
                     <div class="content">
                         <h3 style="font-size: 20px;">Full Hands + Underarms</h3>
-
-                        <p>Cost: <del>₹4,000</del>  ₹3,499</p> 
+                        <p>Cost: <del>₹4,000</del> ₹3,499</p>
                         <p><i class="far fa-clock"></i> 1Hr 30 Min</p>
-                        <p><i class="fa fa-star" style="font-size: 16px;"> 5.0 </i> <a href="https://www.google.com/search?hl=en-IN&gl=in&q=Flawskin+pvt+Ltd,+2,+Rathnamma+Nilayam+3rd+cross,+9th+Main+Rd,+ramappalayout,+Puttenahalli,+Phase+7,+J.+P.+Nagar,+Bengaluru,+Karnataka+560078&ludocid=13967352830529973394&lsig=AB86z5WMNV4S1Zguvz3Qogsomofj&ibp=gwp%3B0,7&authuser=2&hl=en&gl=IN#lkt=LocalPoiReviews&lpg=cid:CgIgAQ%3D%3D"
+                        <p><i class="fa fa-star" style="font-size: 16px;"> 5.0 </i> <a
+                                href="https://www.google.com/search?hl=en-IN&gl=in&q=Flawskin+pvt+Ltd,+2,+Rathnamma+Nilayam+3rd+cross,+9th+Main+Rd,+ramappalayout,+Puttenahalli,+Phase+7,+J.+P.+Nagar,+Bengaluru,+Karnataka+560078&ludocid=13967352830529973394&lsig=AB86z5WMNV4S1Zguvz3Qogsomofj&ibp=gwp%3B0,7&authuser=2&hl=en&gl=IN#lkt=LocalPoiReviews&lpg=cid:CgIgAQ%3D%3D"
                                 style="font-size: 16px;">(76 Reviews)</a></p>
                         <!-- <p>Offer: 50% off (₹500)</p> -->
                         <a href="PrePostServices.html">Pre & Post Care</a>
-                        
-                        <br> <!-- <a href="#" class="book-now-btn">Book Now</a> -->
-                        <div class="dropdown">
-                            <button onclick="toggleDropdown5()" class="dropbtn">Book Now <i class="fa fa-caret-up"></i>
-                            </button>
-                            <div id="myDropdown5" class="dropdown-content">
-                                <button id="cash6">Cash</button>
-                                <button onclick="UPI6()">UPI</button>
+                        <div class="order-btns">
+                            <div class="dropdown">
+                                <button onclick="toggleDropdown6()" class="dropbtn6">Book Now <i
+                                        class="fa fa-caret-up"></i>
+                                </button>
+                                <div id="myDropdown6" class="dropdown-content">
+                                    <button id="cash6">Cash</button>
+                                    <button onclick="UPI6()">UPI</button>
+                                </div>
                             </div>
+                            <button class="reshedule" id="reshedule-btn6">Reshedule</button>
                         </div>
-                        <button class="reshedule" id="reshedule-btn6">Reshedule</button>
 
                     </div>
-                    <!-- <div class="content-img">
-                        <img src="UPPPER LIP.png" alt="">
-                    </div> -->
+
                 </div>
             </div>
+            <div class="service-details">
+                <ul id="cost-sessions-list">
+                    <!-- Cost and session details will be populated here -->
+                </ul>
+            </div>
         </div>
-
-        <div class="service-details">
-            <ul id="cost-sessions-list">
-                <!-- Cost and session details will be populated here -->
-            </ul>
-        </div>
-
     </main>
 
     <script>
         // UNDERARRMS PAGE
-        var btn1 = document.getElementById("cash1");
-        var btn2 = document.getElementById("cash2");
-        var btn3 = document.getElementById("cash3");
-        var btn4 = document.getElementById("cash4");
-        var btn5 = document.getElementById("cash5");
-        var btn6 = document.getElementById("cash6");
+        var btn8 = document.getElementById("cash");
 
-        btn1.onclick = function () {
-            modal.style.display = "flex";
-        }
-        btn2.onclick = function () {
-            modal.style.display = "flex";
-        }
-        btn3.onclick = function () {
-            modal.style.display = "flex";
-        }
-        btn4.onclick = function () {
-            modal.style.display = "flex";
-        }
-        btn5.onclick = function () {
-            modal.style.display = "flex";
-        }
-        btn6.onclick = function () {
+        btn8.onclick = function () {
             modal.style.display = "flex";
         }
 
     </script>
 
-
-    <!-- upi  -->
-
-
+    <script src="BuyButtonDropdown.js"></script>
+    <script src="navbar.js"></script>
+    <script src="COD.js"></script>
+    <script src="GoogleScript.js"></script>
+    <script src="COD-POPUP.js"></script>
     <script>
         function UPI1() {
             window.location.href = "https://rzp.io/l/OzXcU52sk";
@@ -334,17 +325,9 @@
         }
         function UPI6() {
             window.location.href = "https://rzp.io/l/D3JrY7vmin";
-        }
+        }   
     </script>
 
-
-    <script src="BuyButtonDropdown.js"></script>
-    <script src="navbar.js"></script>
-    <script src="COD.js"></script>
-    <script src="GoogleScript.js"></script>
-    <script src="COD-POPUP.js"></script>
-
-    
     <script>
         document.getElementById("reshedule-btn1").addEventListener("click", function () {
             window.location.href = "reshedule.html"; // Replace 'newpage.html' with your target page
