@@ -7,42 +7,24 @@
     <title>Trail Session</title>
     <link rel="stylesheet" href="underarms.css">
     <link rel="stylesheet" href="services-img.css">
-    <link rel="icon" type="image/x-icon" href="flawskinlogo.png">
+    <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="COD.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="flawskinlogo.png">
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <style>
-        @media(max-width:768px) {
-            main {
-                overflow-x: hidden;
-                padding: 10px;
-                max-width: 400px;
-                background: #fff;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                border-radius: 8px;
-                margin-bottom: 5em;
-                z-index: 10;
-            }
-        }
+    <!-- bpoootstrappppppp -->
 
-        .login {
-            position: relative;
-            right: 1em;
-        }
 
-        .login a {
-            font-size: 20px;
-            padding: 5px 5px;
-        }
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-        @media(max-width:768px){
-        .order-btns{
-            display: flex;flex-wrap: wrap; 
-            /* flex-direction: row;flex-wrap: wrap; gap: 1em; */
-        }}
-    </style>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -50,27 +32,36 @@
     <div class="total" id="myModal">
         <div class="hello">
             <form method="post" action="" name="contact-form">
-                <span class="close">&times;</span>
-                <h4>Cash On Devlivery</h4>
+                <span class="close1">&times;</span>
+                <h4 style="color: white;">Cash On Devlivery</h4>
                 <input type="text" name="name" placeholder="Name" required>
                 <input type="text" name="number" placeholder="Number" required>
                 <input type="email" name="email" placeholder="Email" required>
-                <input type="number" name="age" placeholder="Age" max="100" required>
-
+                <!-- <input type="number" name="age" placeholder="Age" max="100" required> -->
                 <select name="services" id="" required>
+                    <!-- <option value="Face">Face</option>
+                    <option value="Neck">Neck</option>
+                    <option value="Underarms">Underarms</option>
+                    <option value="Hands">Hands</option>
+                    <option value="Legs">Legs</option> -->
                     <option value="Trail-Session [ Underarms ]">Trail-Session [ Underarms ]</option>
+                    <!-- <option value="Bikini">Bikini</option>
+                    <option value="Chest & Abdomen">Chest & Abdomen</option>
+                    <option value="Buttocks">Buttocks</option> -->
                 </select>
                 <!-- <input type="date" name="date" id="" required> -->
+
 
                 <input type="datetime-local" name="Date Time" id="" required>
                 <textarea name="location" rows="3"
                     placeholder="Share Your Exact Location along with the pincode and door number" required></textarea>
 
                 <!-- note -->
-                <div class="note-container">
+                <!-- <div class="note-container">
                     <p class="animated-note">For long-distance orders, travel allowance will be charged. The therapist
                         will collect this amount directly.</p>
-                </div>
+                </div> -->
+
                 <input type="submit" value="Confirm Order" id="submit">
             </form>
         </div>
@@ -78,24 +69,43 @@
 
 
 
-    <header>
-        <div class="logo">
-            <img src="FlawSkin-Logo.png" alt="Your Company Logo">
+    <!-- reshedule order -->
 
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> <img src="https://flawskin.com/FlawSkin-Logo.png" alt=""> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="btn btn-dark" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="contact.html">Contact Us</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="btn btn-primary" href="#">Request A Call</a>
+                    </li> -->
+                </ul>
+            </div>
         </div>
-        <div class="login">
-            <a href="menu.html">Home</a>
-            <a href="contact.html" class="nav-link">Contact</a>
-            <!-- <a href="aboutus.html" class="nav-link">About Us</a> -->
-        </div>
-    </header>
+    </nav>
+
 
     <main>
-        <h1>Trail Session</h1>
+        <h1 style="color: #0091ffc4;font-size: 20px;">Trail Session</h1>
         <p>Get smooth, hair-free skin on your underarms with our safe and effective laser hair removal treatments.</p>
 
         <div class="service-areas">
-            <h2>Areas</h2>
+            <h2 style="color: #0091ffc4;font-size: 20px;">Areas</h2>
 
             <div class="service-area">
                 <div class="store">
@@ -103,18 +113,19 @@
                         <h3>underarms</h3>
                         <p>Cost: <del>₹999</del> ₹499</p>
                         <p><i class="far fa-clock"></i> 30 Min</p>
-                        <p><i class="fa fa-star" style="font-size: 16px;"> 5.0 </i> <a
+                        <p><i class="fa fa-star" style="font-size: 16px;"> 5.0</i> <a
                                 href="https://www.google.com/search?hl=en-IN&gl=in&q=Flawskin+pvt+Ltd,+2,+Rathnamma+Nilayam+3rd+cross,+9th+Main+Rd,+ramappalayout,+Puttenahalli,+Phase+7,+J.+P.+Nagar,+Bengaluru,+Karnataka+560078&ludocid=13967352830529973394&lsig=AB86z5WMNV4S1Zguvz3Qogsomofj&ibp=gwp%3B0,7&authuser=2&hl=en&gl=IN#lkt=LocalPoiReviews&lpg=cid:CgIgAQ%3D%3D"
                                 style="font-size: 16px;">(76 Reviews)</a></p>
                         <!-- <p>Offer: 50% off (₹500)</p> -->
                         <a href="PrePostServices.html">Pre & Post Care</a>
 
+
                         <div class="order-btns">
                             <div class="dropdown">
-                                <button onclick="toggleDropdown()" class="dropbtn">Book Now <i
+                                <button onclick="toggleDropdown1()" class="dropbtn1">Book Now <i
                                         class="fa fa-caret-up"></i>
                                 </button>
-                                <div id="myDropdown" class="dropdown-content">
+                                <div id="myDropdown1" class="dropdown-content">
                                     <button id="cash1">Cash</button>
                                     <button onclick="TRAILUPI()">UPI</button>
                                 </div>
@@ -127,27 +138,41 @@
                     </div>
                 </div>
             </div>
+
+
             <div class="service-details">
                 <ul id="cost-sessions-list">
                     <!-- Cost and session details will be populated here -->
                 </ul>
             </div>
-        </div>
+
     </main>
+
+    <footer></footer>
+
     <script>
         // UNDERARRMS PAGE
-        var btn7 = document.getElementById("cash1");
+        var btn8 = document.getElementById("cash");
+        //  var btn9 = document.getElementById("reshedule-btn");
 
-        btn7.onclick = function () {
+        btn8.onclick = function () {
             modal.style.display = "flex";
         }
 
+        btn9.onclick = function () {
+            shedule.style.display = "flex";
+        }
+
+
+
     </script>
+
     <script src="BuyButtonDropdown.js"></script>
     <script src="navbar.js"></script>
     <script src="COD.js"></script>
     <script src="GoogleScript.js"></script>
     <script src="COD-POPUP.js"></script>
+    <script src="reshedule-google-sheets.js"></script>
     <script>
         function TRAILUPI() { window.location.href = "https://rzp.io/l/XO2IrmlNuV" }  
     </script>
