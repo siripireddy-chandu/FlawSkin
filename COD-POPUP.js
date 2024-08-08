@@ -23,6 +23,7 @@ var btn3 = document.getElementById("cash3");
 var btn4 = document.getElementById("cash4");
 var btn5 = document.getElementById("cash5");
 var btn6 = document.getElementById("cash6");
+var btn6 = document.getElementById("cash7");
 
 
 
