@@ -22,9 +22,9 @@ document.addEventListener("click", function (event) {
 function toggleDropdown1() {
   var dropdown = document.getElementById("myDropdown1");
   if (dropdown.style.display === "block") {
-      dropdown.style.display = "none";
+    dropdown.style.display = "none";
   } else {
-      dropdown.style.display = "block";
+    dropdown.style.display = "block";
   }
 }
 
