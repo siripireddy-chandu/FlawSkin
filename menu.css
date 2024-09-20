@@ -237,6 +237,47 @@ header {
     }
 }
 
+.scrolling-text-container {
+    width: 100%;  /* Full width */
+    overflow: hidden;  /* Hide overflowing content */
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #bfcdde, #3795e2);  /* Gradient background */
+    padding: -2px;  /* Add more padding */
+    border-radius: 1px;  /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  /* Subtle shadow for a clean look */
+    position: relative;
+}
+
+/* Scrolling text */
+.scrolling-text {
+    display: inline-block;  /* Keep the text in a single line */
+    white-space: nowrap;  /* Prevent wrapping */
+    padding-right: 10%;  /* Add space after the text for smooth scroll */
+    font-size: 1.5rem;  /* Text size */
+    font-family: 'Arial', sans-serif;  /* Clean, modern font */
+    color: #070707;  /* White text color */
+    font-weight: 500;  /* Slightly bold */
+    letter-spacing: 0.5px;  /* Spacing between letters for readability */
+    animation: scroll-text 20s linear infinite;  /* Scroll animation */
+}
+
+/* Highlight "Note:" with red color */
+.scrolling-text .note {
+    color: red;  /* Red color for the "Note:" */
+    font-weight: bold;  /* Make "Note:" bold */
+    margin-right: 5px;  /* Slight space after "Note:" */
+}
+
+/* Keyframes to smoothly scroll the text from right to left */
+@keyframes scroll-text {
+    0% {
+        transform: translateX(35%);  /* Start completely to the right */
+    }
+    100% {
+        transform: translateX(-100%);  /* Move completely to the left */
+    }
+}
+
 home-service-banner {
     position: absolute;
     top: 50%;
