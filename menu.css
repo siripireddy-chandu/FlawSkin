@@ -236,7 +236,7 @@ header {
         transform: translateY(-5px);
     }
 }
-
+/* Scrolling text */
 .scrolling-text-container {
     width: 100%;  /* Full width */
     overflow: hidden;  /* Hide overflowing content */
@@ -248,7 +248,6 @@ header {
     position: relative;
 }
 
-/* Scrolling text */
 .scrolling-text {
     display: inline-block;  /* Keep the text in a single line */
     white-space: nowrap;  /* Prevent wrapping */
