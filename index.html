@@ -264,6 +264,68 @@
         <p>Home Service Available Across <br> <span>Banglore</span> </p>
     </section>
 
+<!-- "Note:" inside the scrolling text, highlighted in red -->
+    <div class="scrolling-text-container"></div>
+        <div class="scrolling-text">
+            <span class="note">Note:</span> For services exceeding a distance of 15 kilometers, a travel allowance will be added to the base rates of ₹499 and ₹899.
+        </div>
+    </div>
+    <style>
+    .scrolling-text-container {
+        width: 100%;  /* Full width */
+        overflow: hidden;  /* Hide overflowing content */
+        box-sizing: border-box;
+        background: linear-gradient(135deg, #acbacb, #3898e7);  /* Gradient background */
+        padding: -2px;  /* Add more padding */
+        border-radius: 1px;  /* Rounded corners */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  /* Subtle shadow for a clean look */
+        position: relative;
+    }
+    
+    /* Scrolling text */
+    .scrolling-text {
+        display: inline-block;  /* Keep the text in a single line */
+        white-space: nowrap;  /* Prevent wrapping */
+        padding-right: 10%;  /* Add space after the text for smooth scroll */
+        font-size: 1.5rem;  /* Text size */
+        font-family: 'Arial', sans-serif;  /* Clean, modern font */
+        color: #fff;  /* White text color */
+        font-weight: 500;  /* Slightly bold */
+        letter-spacing: 0.5px;  /* Spacing between letters for readability */
+        animation: scroll-text 20s linear infinite;  /* Scroll animation */
+    }
+    
+    /* Highlight "Note:" with red color */
+    .scrolling-text .note {
+        color: red;  /* Red color for the "Note:" */
+        font-weight: bold;  /* Make "Note:" bold */
+        margin-right: 5px;  /* Slight space after "Note:" */
+    }
+    
+    /* Keyframes to smoothly scroll the text from right to left */
+    @keyframes scroll-text {
+        0% {
+            transform: translateX(35%);  /* Start completely to the right */
+        }
+        100% {
+            transform: translateX(-100%);  /* Move completely to the left */
+        }
+    }
+    
+    /* Responsive font size */
+    @media (max-width: 768px) {
+        .scrolling-text {
+            font-size: 1.2rem;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .scrolling-text {
+            font-size: 1rem;
+        }
+    }
+</style>
+
     <!-- why flawskin -->
 
     <section class="why-flawskin">
