@@ -236,6 +236,7 @@ header {
         transform: translateY(-5px);
     }
 }
+
 /* Scrolling text */
 .scrolling-text-container {
     width: 100%;  /* Full width */
